@@ -1,9 +1,60 @@
+html {
+	margin: 25px 100px 75px 100px;
+	padding: 0;
+}
+
+body { 
+	font-family: 'Helvetica';
+	background: #fff8ee;  
+	padding: 0;
+}
+div {
+	padding: 1%;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-family: 'Trebuchet MS';
+	text-align: center;
+}
+
+h1{
+	color: #ffa736; 
+	font-family: "Great Vibes", cursive; 
+	font-size: 100px; 
+	line-height: 80px; 
+	font-weight: normal; 
+	margin-bottom: 0px; 
+	margin-top: 40px; 
+	text-align: center; 
+	text-shadow: 2px 1px 1px #fa920d;
+}
+
+h3 {
+	color: #ff9f41; 
+	font-family: 'Trebuchet MS', sans-serif; 
+	font-size: 25px; 
+	font-weight: normal; 
+	letter-spacing: 1px;
+	margin-bottom: 10px; 
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	text-align: center; 
+}
+
+p {
+	color: #3d3a33; 
+	
+}
+
+/* navigation bar */
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #f3c875;
+  display: inline-block;
+  list-style-type: none;
 }
 
 li {
@@ -11,6 +62,9 @@ li {
 }
 
 li a {
+  font-family: 'Candara';
+  font-size: 22px; 
+  transform: scale(.75, 1);
   display: block;
   color: white;
   text-align: center;
@@ -20,5 +74,5 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #eeb74f;
 }
