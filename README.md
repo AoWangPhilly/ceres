@@ -1,3 +1,3 @@
 https://aowangdrexel.github.io/ceres/
 
-* Currently needs to be manually udpated. 
+* Map updates every four hours
