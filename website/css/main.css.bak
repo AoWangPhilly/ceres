@@ -4,7 +4,7 @@ html {
 }
 
 body { 
-	font-family: 'B612 Mono';
+	font-family: 'Helvetica';
 	background: #fff8ee;  
 	padding: 0;
 }
@@ -12,7 +12,7 @@ div {
 	padding: 1%;
 	margin-left: 5%;
 	margin-right: 5%;
-	font-family: 'Alegreya';
+	font-family: 'Trebuchet MS';
 	text-align: center;
 }
 
@@ -30,7 +30,7 @@ h1{
 
 h3 {
 	color: #ff9f41; 
-	font-family: 'Alegreya';
+	font-family: 'Trebuchet MS', sans-serif; 
 	font-size: 25px; 
 	font-weight: normal; 
 	letter-spacing: 1px;
@@ -41,7 +41,6 @@ h3 {
 }
 
 p {
-    font-family: 'B612 Mono';
 	color: #3d3a33; 
 	
 }
@@ -49,7 +48,6 @@ p {
 /* navigation bar */
 
 ul {
-  font-family: 'B612 Mono';
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -60,12 +58,11 @@ ul {
 }
 
 li {
-    font-family: 'B612 Mono';
-    float: left;
+  float: left;
 }
 
 li a {
-  font-family: 'B612 Mono';
+  font-family: 'Candara';
   font-size: 22px; 
   transform: scale(.75, 1);
   display: block;
