@@ -4,7 +4,7 @@ html {
 }
 
 body { 
-	font-family: 'B612 Mono';
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background: #fff8ee;  
 	padding: 0;
 }
@@ -12,7 +12,6 @@ div {
 	padding: 1%;
 	margin-left: 5%;
 	margin-right: 5%;
-	font-family: 'Alegreya';
 	text-align: center;
 }
 
@@ -30,10 +29,9 @@ h1{
 
 h3 {
 	color: #ff9f41; 
-	font-family: 'Alegreya';
+	font-family: 'Spartan';
 	font-size: 25px; 
-	font-weight: normal; 
-	letter-spacing: 1px;
+	font-style: bold; 
 	margin-bottom: 10px; 
 	margin-top: 10px; 
 	margin-bottom: 10px; 
@@ -41,7 +39,7 @@ h3 {
 }
 
 p, h5 {
-    font-family: 'B612 Mono';
+    font-family: "Trebuchet MS", Helvetica, sans-serif	;
 	color: #3d3a33; 
 	
 }
@@ -49,8 +47,9 @@ p, h5 {
 /* navigation bar */
 
 ul {
-  font-family: 'B612 Mono';
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   list-style-type: none;
+  font-style: bold;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -60,18 +59,19 @@ ul {
 }
 
 li {
-    font-family: 'B612 Mono';
-    float: left;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: bold;
+	float: left;
 }
 
 li a {
-  font-family: 'B612 Mono';
-  font-size: 22px; 
-  transform: scale(.75, 1);
+  font-family: 'Spartan';
+  font-size: 15px; 
+  font-style: bold;
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
