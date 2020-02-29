@@ -8,7 +8,8 @@ import datetime
 import subprocess
 from folium import plugins
 from bs4 import BeautifulSoup
-
+import plotly.offline 
+import plotly.graph_objs as go
 
 def retrieve_data(country, sensor, time):
     """Webscrapes the NASA website for the wildfire data
@@ -97,7 +98,7 @@ def fix_slider():
     """Fixes the HeatMapWithTime slider issue"""
     script1 = r'<link rel="stylesheet" href="http://apps.socib.es/Leaflet.TimeDimension/dist/leaflet.timedimension.control.min.css"/>'
     script2 = r'<link rel="stylesheet" href="https://rawcdn.githack.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"/>'
-    with open("/home/aow252/ceres/website/map.html", "r") as mapping, open("/home/aow252/ceres/website/map.html", "r+") as new_mapping:
+    with open("/home/aow252/ceres/website/REALMAP.html", "r") as mapping, open("/home/aow252/ceres/website/REALMAP.html", "r+") as new_mapping:
         html = mapping.read()
         html = html.replace(script1, script2)
         new_mapping.write(html)
@@ -169,6 +170,13 @@ def main():
 
     # main_df.to_csv("main_df.csv")
     formatted = get_week_time_coordinates(main_df)
+    
+    # Creates the line graph
+    data = [go.Scatter(x=formatted[1], y=[len(coord) for coord in formatted[0]], mode="lines")]
+    layout = go.Layout(title="Australian's Weekly Bushfire Progression")
+    fig = go.Figure(data, layout)
+    plotly.offline.plot(fig, filename ="/home/aow252/ceres/website/wildfirestats.html", auto_open=False)
+    
     plugins.HeatMapWithTime(
         formatted[0],
         formatted[1],
@@ -190,7 +198,7 @@ def main():
         folium.TileLayer(style).add_to(m)
     folium.LayerControl().add_to(m)
 
-    m.save("/home/aow252/ceres/website/map.html")
+    m.save("/home/aow252/ceres/website/REALMAP.html")
     fix_slider()
 
     print("Commiting and pushing to Github webpage...")
