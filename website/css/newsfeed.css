@@ -34,6 +34,10 @@ body {
   padding: 0 4px;
 }
 
+.container:hover .image {
+  opacity: 0.3;
+}
+
 .column img {
   margin-top: 8px;
   vertical-align: middle;
