@@ -34,8 +34,31 @@ body {
   padding: 0 4px;
 }
 
+.container {
+  position: relative;
+}
+
+.middle {
+  opacity: 0;
+  position: absolute;
+  top: 30%; 
+  left: 30%;
+  transform: translate(-50%, -50%);
+
+}
+
 .container:hover .image {
   opacity: 0.3;
+}
+
+.container:hover .middle{
+  opacity: 1;
+}
+
+.text{
+  color: orange;
+  font-size: 20px;
+
 }
 
 .column img {
