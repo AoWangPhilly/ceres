@@ -1,38 +1,159 @@
-<html> 
-	<center>
-		<head>
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<meta charset="utf-8">
-			<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="css/main.css">
-			<title> Ceres: Home </title>
-		</head>
-		<body> 
-			<h1> Ceres </h1>
-			<br></br>
-			<ul id="navbar">
-				<li><a href="home.html">Home</a></li>
-				<li><a href="background.html">Background</a></li>
-				<li><a href="charity.html">Charities</a></li>
-				<li><a href="map.html">Map</a></li>
-				<li><a href="mapinfo.html">Map Information</a></li>
-				<li><a href="newsFeed.html">News Feed</a></li>
-				<li><a href="whyCeres.html">Why Ceres</a></li>
-                <li><a href="wildfirestats.html">Wildfire Statistics</a></li>
-            </ul>
-			<div>
-				<h3> About </h3>
-				<p> 
-					Ceres is a website dedicated to spreading and promoting awareness to the current wildfires in Australia.
-					It features an interactive map, news feed, and additional information for people to not only learn more
-					about the sitation, but also about how they can help. 					
-				</p>
-				<p> 
-					Like our slogan, we believe that if people actually see the fires and learn more about them, then they
-					will be equipped with the knowledge to actually fight the fire. We hope that everyone that uses this 
-					website comes out learning something new.
-				</p>
-			</div>	
-		</body>	
-	</center>
-</html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
+    <title> Ceres: Home </title>
+    <style>
+        .hero {
+            background: url(https://images.unsplash.com/photo-1493375366763-3ed5e0e6d8ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1081&q=80) center/cover;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0.25rem;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: white;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .hero -->
+    <section class="hero is-medium">
+        <!--is-warning is-bold-->
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="home.html" class="navbar-item">
+                            <p style="font-size: 2rem; font-family: Great Vibes">Ceres</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" class="image">
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="home.html" class="navbar-item is-active">
+                                Home
+                            </a>
+                            <a href="background.html" class="navbar-item">
+                                Background
+                            </a>
+                            <a href="charity.html" class="navbar-item">
+                                Charities
+                            </a>
+                            <a href="map.html" class="navbar-item">
+                                Map
+                            </a>
+                            <a href="mapinfo.html" class="navbar-item">
+                                Map Information
+                            </a>
+                            <a href="newsFeed.html" class="navbar-item">
+                                News Feed
+                            </a>
+                            <a href="whyCeres.html" class="navbar-item">
+                                Why Ceres
+                            </a>
+                            <a href="wildfirestats.html" class="navbar-item">
+                                Wildfire Statistics
+                            </a>
+                            <span class="navbar-item">
+                                <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Download</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- /.hero -->
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 style="font-size: 100px; font-family: Great Vibes" class="title">
+                    Ceres
+                </h1>
+                <h2 class="subtitle is-size-4">
+                    See the Fire, Fight the Fire!
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- .section -->
+    <section class="section has-background-light">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Ceres?</h1>
+                                <p class="is-size-5">
+                                    Ceres is a website dedicated to spreading and promoting awareness to the current wildfires in Australia. It features an interactive map, news feed, and additional information for people to not only learn more
+                                    about the sitation, but also about how they can help. <br> ＼(＾∀＾)メ(＾∀＾)ノ
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Map?</h1>
+                                <p class="is-size-5">
+                                    Like our slogan, we believe that if people actually see the fires and learn more about them, then they
+                                    will be equipped with the knowledge to actually fight the fire. The map is created from Folium, a Python Library and the fires are current and up-to-date, webscraped from NASA's dataframes.<br>⦤(^ー^)⦥
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">News Feed?</h1>
+                                <p class="is-size-5">
+                                    We hope that everyone that uses this
+                                    website comes out learning something new from our active news feed. We hope to provide a current weekly news feed, but also a bi-weekly/monthly newsletter very soon! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Ceres</strong> created by Joey Huang, Hung Do, EJ Roberts, Ao Wang
+            </p>
+        </div>
+    </footer>
+    <!-- /.footer -->
+
+</body></html>
