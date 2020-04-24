@@ -8,9 +8,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
         <link rel="stylesheet" href="css/newsfeed.css">
         <link rel="stylesheet" href="css/scrollbar.css">
-		<link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <script src="jquery-3.4.1.min.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <script src="js/newsfeed.js"></script>
+        <script src="js/dropdown.js"></script>
         <title>New Feed</title>
 
     </head>
@@ -27,50 +29,46 @@
                                 <p style="font-size: 2rem; font-family: Great Vibes">Ceres</p>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" class="image">
                             </a>
-                            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
+                            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="true">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
                         </div>
-                        <div id="navbarMenuHeroA" class="navbar-menu">
-                            <div class="navbar-end">
-                                <a href="home.html" class="navbar-item">
-                                    Home
+
+                        <div class="navbar-menu navbar-end" id="navMenu">
+                            <a href="home.html" class="navbar-item is-active">
+                                Home
+                            </a>
+
+                            <a href="charity.html" class="navbar-item">
+                                Charities
+                            </a>
+                            <a href="map.html" class="navbar-item">
+                                Map
+                            </a>
+                            <a href="mapinfo.html" class="navbar-item">
+                                Map Information
+                            </a>
+                            <a href="newsFeed.html" class="navbar-item">
+                                News Feed
+                            </a>
+
+                            <a href="wildfirestats.html" class="navbar-item">
+                                Wildfire Statistics
+                            </a>
+                            <a href="twitterFeed.html" class="navbar-item">
+                                <img src="https://i.ya-webdesign.com/images/twitter-png-black-8.png" class="image">
+                            </a>
+                            <span class="navbar-item">
+                                <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Download</span>
                                 </a>
-                                <a href="background.html" class="navbar-item">
-                                    Background
-                                </a>
-                                <a href="charity.html" class="navbar-item">
-                                    Charities
-                                </a>
-                                <a href="map.html" class="navbar-item">
-                                    Map
-                                </a>
-                                <a href="mapinfo.html" class="navbar-item">
-                                    Map Information
-                                </a>
-                                <a href="newsFeed.html" class="navbar-item is-active">
-                                    News Feed
-                                </a>
-                                <a href="whyCeres.html" class="navbar-item">
-                                    Why Ceres
-                                </a>
-                                <a href="wildfirestats.html" class="navbar-item">
-                                    Wildfire Statistics
-                                </a>
-                                <a href="twitterFeed.html" class="navbar-item">
-                                    <img src="https://i.ya-webdesign.com/images/twitter-png-black-8.png" class="image">
-                                </a>
-                                <span class="navbar-item">
-                                    <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
-                                        <span class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </span>
-                                        <span>Download</span>
-                                    </a>
-                                </span>
-                            </div>
+                            </span>
+
                         </div>
                     </div>
                 </nav>
@@ -292,38 +290,38 @@
                 </div>
             </div>
         </section>
-		<footer class="footer">
-			<div align="center">
-				<div class="container is-widescreen">
-					<span style="font-size: 50px; color: #303030;">ceres.ly</span>
+        <footer class="footer">
+            <div align="center">
+                <div class="container is-widescreen">
+                    <!-- 					<span style="font-size: 50px; color: #303030;">ceres.ly</span>
 						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" width="50">
 						<p style="font-size:14px; color: #303030">
 							ceres.ly is a design project created with the intention to bring and maintain awareness to the Australian bushfires.
 							To learn more about the people behind this website, <a href="team.html">click here</a>.
 						</p>
-					<p>&nbsp;&nbsp;</p>
-					<div class="columns">
-						<div class="column">
-							<p style="font-size:10px "><a href="home.html">Home</a></p>
-						</div>							
-						<div class="column">
-							<p style="font-size:10px"><a href="map.html">Map</a></p>
-						</div>
-						<div class="column">
-							<p style="font-size:10px"><a href="newsFeed.html">News</a></p>
-						</div>
-						<div class="column">
-							<p style="font-size:10px"><a href="twitterFeed.html">Twitter</a></p>
-						</div>
-						<div class="column">
-							<p style="font-size:10px"><a href="whyCeres.html">About</a></p>
-						</div>					
-					</div>
-				</div>
-				<p>&nbsp;&nbsp;</p>
-				<p><span style="font-size: 11px; color: #303030;">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</span></p>
-				<p><span style="font-size: 11px; color: #303030;"><strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.</span></p>
-			</div>
-		</footer>
+					<p>&nbsp;&nbsp;</p> -->
+                    <div class="columns">
+                        <div class="column">
+                            <p id="icons"><a href="home.html"><img src="icons/home.png"></a></p>
+                        </div>
+                        <div class="column">
+                            <p id="icons"><a href="map.html"><img src="icons/map.png"></a></p>
+                        </div>
+                        <div class="column">
+                            <p id="icons"><a href="newsFeed.html"><img src="icons/news.png"></a></p>
+                        </div>
+                        <div class="column">
+                            <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
+                        </div>
+                        <div class="column">
+                            <p id="icons"><a href="whyCeres.html"><img src="icons/about.png"></a></p>
+                        </div>
+                    </div>
+                </div>
+                <p>&nbsp;&nbsp;</p>
+                <p><span style="font-size: 11px; color: #303030;">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</span></p>
+                <p><span style="font-size: 11px; color: #303030;"><strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.</span></p>
+            </div>
+        </footer>
     </body>
 </center></html>
