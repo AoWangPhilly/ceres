@@ -1,327 +1,327 @@
 <html>
-<center>
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-        <link rel="stylesheet" href="css/newsfeed.css">
-        <link rel="stylesheet" href="css/scrollbar.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <script src="jquery-3.4.1.min.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-        <script src="js/newsfeed.js"></script>
-        <script src="js/dropdown.js"></script>
-        <title>New Feed</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/newsfeed.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/newsfeed.js"></script>
+    <script src="js/dropdown.js"></script>
+    <title>New Feed</title>
 
-    </head>
+</head>
 
-    <body>
-        <!-- .hero -->
-        <section class="hero is-warning is-bold is-small">
-            <!-- Hero head: will stick at the top -->
-            <div class="hero-head">
-                <nav class="navbar">
-                    <div class="container">
-                        <div class="navbar-brand">
-                            <a href="home.html" class="navbar-item">
-                                <p style="font-size: 2rem; font-family: Great Vibes">Ceres</p>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" class="image">
+<body>
+    <!-- .hero -->
+    <section class="hero is-warning is-bold is-small">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="home.html" class="navbar-item">
+                            <p style="font-size: 2rem; font-family: Great Vibes">Ceres</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" class="image">
+                        </a>
+                        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="true">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div class="navbar-menu navbar-end" id="navMenu">
+                        <a href="home.html" class="navbar-item is-active">
+                            Home
+                        </a>
+
+                        <a href="charity.html" class="navbar-item">
+                            Charities
+                        </a>
+                        <a href="map.html" class="navbar-item">
+                            Map
+                        </a>
+                        <a href="mapinfo.html" class="navbar-item">
+                            Map Information
+                        </a>
+                        <a href="newsFeed.html" class="navbar-item">
+                            News Feed
+                        </a>
+
+                        <a href="wildfirestats.html" class="navbar-item">
+                            Wildfire Statistics
+                        </a>
+                        <a href="twitterFeed.html" class="navbar-item">
+                            <img src="https://i.ya-webdesign.com/images/twitter-png-black-8.png" class="image">
+                        </a>
+                        <span class="navbar-item">
+                            <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>Download</span>
                             </a>
-                            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="true">
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                            </a>
-                        </div>
+                        </span>
 
-                        <div class="navbar-menu navbar-end" id="navMenu">
-                            <a href="home.html" class="navbar-item is-active">
-                                Home
-                            </a>
-
-                            <a href="charity.html" class="navbar-item">
-                                Charities
-                            </a>
-                            <a href="map.html" class="navbar-item">
-                                Map
-                            </a>
-                            <a href="mapinfo.html" class="navbar-item">
-                                Map Information
-                            </a>
-                            <a href="newsFeed.html" class="navbar-item">
-                                News Feed
-                            </a>
-
-                            <a href="wildfirestats.html" class="navbar-item">
-                                Wildfire Statistics
-                            </a>
-                            <a href="twitterFeed.html" class="navbar-item">
-                                <img src="https://i.ya-webdesign.com/images/twitter-png-black-8.png" class="image">
-                            </a>
-                            <span class="navbar-item">
-                                <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
-                                    <span class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </span>
-                                    <span>Download</span>
-                                </a>
-                            </span>
-
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <h1 style="font-size: 100px; font-family: Great Vibes" class="title has-text-black-ter">
-                        News Feed
-                    </h1>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="columns is-multiline">
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51555185">
-                                    <div class="content-overlay"></div>
-                                    <img class="content-image" src="https://ichef.bbci.co.uk/news/1024/branded_news/C1E3/production/_110953694_sdfsdfsdfsdfsdfsdf.png">
-                                    <div class="content-details fadeIn-top">
-                                        <h3>AUSTRALIA FIREFIGHTERS THANKED WITH TIMES SQUARE BILLBOARD</h3>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/av/world-australia-51290745/australia-fires-blaze-sparked-by-helicopter-lights-rages-near-canberra">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/116C8/production/_110686317_p081ng1l.jpg">
-                                    <div class="content-details fadeIn-top">
-                                        <h3>AUSTRALIAN FIRES: BLAZE "SPARKED BYO HELICOPTER LIGHTS" RAGES NEAR CANBERRA</h3>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51301917">
-                                    <div class="content-overlay"></div>
-                                    <img src="https://ichef.bbci.co.uk/news/1024/branded_news/CAA7/production/_110697815_2afda075-4d7b-4ebf-9e2a-80dbcb6eb95c.jpg">
-                                    <div class="content-details fadeIn-top">
-                                        <h3>AUSTRALIAN FIRES: NSW INQUIRY TO PROBE CLIMATE CHANGE IMPACT</h3>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51320333">
-                                    <div class="content-overlay"></div>
-                                    <img src="https://ichef.bbci.co.uk/news/1024/branded_news/956B/production/_110715283_1cd21ff6-fc86-460f-b7f8-8b28c40b102d.jpg">
-                                    <div class="content-details fadeIn-top">
-                                        <h3>STATE OF EMERGENCY DECLARED FOR CANBERRA REGION</h3>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51420500">
-                                    <div class="content-overlay"></div>
-                                    <img src="https://ichef.bbci.co.uk/images/ic/1024x576/p082lnr4.jpg">
-                                    <div class="content-details fadeIn-top">
-                                        <h3>FIRE-HIT AUSTRAILIA FACES FLOODING THREAT</h3>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/in-pictures-51236425">
-                                    <div class="content-overlay"></div>
-                                    <img src="https://ichef.bbci.co.uk/news/1024/branded_news/15151/production/_110635368_hi059397633.jpg">
-                                    <div class="content-details fadeIn-top">
-                                        <h3>WEEK IN PICTURES: 18-24 JANUARY</h3>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/newsbeat-51543231">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/121A/production/_110943640_aus1.jpg">
-                                    <div class="content-details fadeIn-top">
-                                        <h3>AUSTRALIA BUSHFIRES: BACKPACKERS CAN STAY LONGER IF THEY HELP REBUILD</h3>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/sport/football/51277309">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/12135/production/_110673047_drogba_getty2.jpg">
-                                </a>
-                                <div class="content-details fadeIn-top">
-                                    <h3>AUSTRALIAN BUSHFIRE: DIDIER DROGBA TO PLAY IN CHARITY GAME</h3>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51453767">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/165AC/production/_110846519_gettyimages-1205198448.jpg">
-                                </a>
-                                <div class="content-details fadeIn-top">
-                                    <h3>
-                                        AUSTRALIA WEATHER: RAIN COULD PUT OUT REMAINING NEW SOUTH WALES BLAZES</h3>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51409551">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/1138C/production/_110804507_gettyimages-1204496120.jpg">
-                                </a>
-                                <div class="content-details fadeIn-top">
-                                    <h3>AUSTRALIA FIRES: HEAVY DOWNBURSTS EXTINGUISH BLAZES</h3>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51338314">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/images/ic/1024x576/p081ngjc.jpg">
-                                </a>
-                                <div class="content-details fadeIn-top">
-                                    <h3>AUSTRALIA FIRES: RESIDENTS TOLD TO SEEK SHELTER IN CANBERRA REGION</h3>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51469688">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/18430/production/_110867399_a9410d19-7a03-4179-95f1-76e2eb5b32cd.jpg">
-                                </a>
-                                <div class="content-details fadeIn-top">
-                                    <h3>AUSTRALIA FIRES: 113 ANIMAL SPECIES "NEED EMERGENCY HELP"</h3>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51231983">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/1207B/production/_110615837_gettyimages-841399516.jpg">
-                                </a>
-
-                                <div class="content-details fadeIn-top">
-                                    <h3>AUSTRALIA FIRES: US CREW KILLED IN AIR TANKER CRASH IDENTIFIED</h3>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51498193">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/B86A/production/_110901274_82391315_10157619980065552_2908167144040562688_o.jpg">
-                                </a>
-
-                                <div class="content-details fadeIn-top">
-                                    <h3>AUSTRALIA WEATHER: HOW MUCH RAIN DID IT TAKE TO PUT OUT NSW FIRES?</h3>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/world-australia-51520715">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/14A84/production/_110921648_mediaitem110921647.jpg">
-                                </a>
-
-                                <div class="content-details fadeIn-top">
-                                    <h3>AUSTRALIA FIRES: THOUSANDS IN SYDNEY FOR FIGHT FIRE AUSTRALIA CONCERT</h3>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image is-fit">
-                            <div class="content">
-                                <a href="https://www.bbc.co.uk/news/av/world-australia-51304687/australia-fires-footage-shows-speed-fires-can-spread">
-                                    <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/05D1/production/_110698410_p081rfp2.jpg">
-                                </a>
-
-                                <div class="content-details fadeIn-top">
-                                    <h3>AUSTRALIA FIRES: FOOTAGE SHOWS SPEED FIRES CAN SPREAD</h3>
-                                </div>
-                            </div>
-                        </figure>
                     </div>
                 </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 style="font-size: 100px; font-family: Great Vibes" class="title has-text-black-ter">
+                    News Feed
+                </h1>
             </div>
-        </section>
-        <footer class="footer">
-            <div align="center">
-                <div class="container is-widescreen">
-                    <!-- 					<span style="font-size: 50px; color: #303030;">ceres.ly</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51555185">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="https://ichef.bbci.co.uk/news/1024/branded_news/C1E3/production/_110953694_sdfsdfsdfsdfsdfsdf.png">
+                                <div class="content-details fadeIn-top">
+                                    <h3>AUSTRALIA FIREFIGHTERS THANKED WITH TIMES SQUARE BILLBOARD</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/av/world-australia-51290745/australia-fires-blaze-sparked-by-helicopter-lights-rages-near-canberra">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/116C8/production/_110686317_p081ng1l.jpg">
+                                <div class="content-details fadeIn-top">
+                                    <h3>AUSTRALIAN FIRES: BLAZE "SPARKED BYO HELICOPTER LIGHTS" RAGES NEAR CANBERRA</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51301917">
+                                <div class="content-overlay"></div>
+                                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/CAA7/production/_110697815_2afda075-4d7b-4ebf-9e2a-80dbcb6eb95c.jpg">
+                                <div class="content-details fadeIn-top">
+                                    <h3>AUSTRALIAN FIRES: NSW INQUIRY TO PROBE CLIMATE CHANGE IMPACT</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51320333">
+                                <div class="content-overlay"></div>
+                                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/956B/production/_110715283_1cd21ff6-fc86-460f-b7f8-8b28c40b102d.jpg">
+                                <div class="content-details fadeIn-top">
+                                    <h3>STATE OF EMERGENCY DECLARED FOR CANBERRA REGION</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51420500">
+                                <div class="content-overlay"></div>
+                                <img src="https://ichef.bbci.co.uk/images/ic/1024x576/p082lnr4.jpg">
+                                <div class="content-details fadeIn-top">
+                                    <h3>FIRE-HIT AUSTRAILIA FACES FLOODING THREAT</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/in-pictures-51236425">
+                                <div class="content-overlay"></div>
+                                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/15151/production/_110635368_hi059397633.jpg">
+                                <div class="content-details fadeIn-top">
+                                    <h3>WEEK IN PICTURES: 18-24 JANUARY</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/newsbeat-51543231">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/121A/production/_110943640_aus1.jpg">
+                                <div class="content-details fadeIn-top">
+                                    <h3>AUSTRALIA BUSHFIRES: BACKPACKERS CAN STAY LONGER IF THEY HELP REBUILD</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/sport/football/51277309">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/12135/production/_110673047_drogba_getty2.jpg">
+                            </a>
+                            <div class="content-details fadeIn-top">
+                                <h3>AUSTRALIAN BUSHFIRE: DIDIER DROGBA TO PLAY IN CHARITY GAME</h3>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51453767">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/165AC/production/_110846519_gettyimages-1205198448.jpg">
+                            </a>
+                            <div class="content-details fadeIn-top">
+                                <h3>
+                                    AUSTRALIA WEATHER: RAIN COULD PUT OUT REMAINING NEW SOUTH WALES BLAZES</h3>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51409551">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/1138C/production/_110804507_gettyimages-1204496120.jpg">
+                            </a>
+                            <div class="content-details fadeIn-top">
+                                <h3>AUSTRALIA FIRES: HEAVY DOWNBURSTS EXTINGUISH BLAZES</h3>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51338314">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/images/ic/1024x576/p081ngjc.jpg">
+                            </a>
+                            <div class="content-details fadeIn-top">
+                                <h3>AUSTRALIA FIRES: RESIDENTS TOLD TO SEEK SHELTER IN CANBERRA REGION</h3>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51469688">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/18430/production/_110867399_a9410d19-7a03-4179-95f1-76e2eb5b32cd.jpg">
+                            </a>
+                            <div class="content-details fadeIn-top">
+                                <h3>AUSTRALIA FIRES: 113 ANIMAL SPECIES "NEED EMERGENCY HELP"</h3>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51231983">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/1207B/production/_110615837_gettyimages-841399516.jpg">
+                            </a>
+
+                            <div class="content-details fadeIn-top">
+                                <h3>AUSTRALIA FIRES: US CREW KILLED IN AIR TANKER CRASH IDENTIFIED</h3>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51498193">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/B86A/production/_110901274_82391315_10157619980065552_2908167144040562688_o.jpg">
+                            </a>
+
+                            <div class="content-details fadeIn-top">
+                                <h3>AUSTRALIA WEATHER: HOW MUCH RAIN DID IT TAKE TO PUT OUT NSW FIRES?</h3>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/world-australia-51520715">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/14A84/production/_110921648_mediaitem110921647.jpg">
+                            </a>
+
+                            <div class="content-details fadeIn-top">
+                                <h3>AUSTRALIA FIRES: THOUSANDS IN SYDNEY FOR FIGHT FIRE AUSTRALIA CONCERT</h3>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-one-third">
+                    <figure class="image is-fit">
+                        <div class="content">
+                            <a href="https://www.bbc.co.uk/news/av/world-australia-51304687/australia-fires-footage-shows-speed-fires-can-spread">
+                                <div class="content-overlay"></div><img src="https://ichef.bbci.co.uk/news/1024/branded_news/05D1/production/_110698410_p081rfp2.jpg">
+                            </a>
+
+                            <div class="content-details fadeIn-top">
+                                <h3>AUSTRALIA FIRES: FOOTAGE SHOWS SPEED FIRES CAN SPREAD</h3>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div align="center">
+            <div class="container is-widescreen">
+                <!-- 					<span style="font-size: 50px; color: #303030;">ceres.ly</span>
 						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" width="50">
 						<p style="font-size:14px; color: #303030">
 							ceres.ly is a design project created with the intention to bring and maintain awareness to the Australian bushfires.
 							To learn more about the people behind this website, <a href="team.html">click here</a>.
 						</p>
 					<p>&nbsp;&nbsp;</p> -->
-                    <div class="columns">
-                        <div class="column">
-                            <p id="icons"><a href="home.html"><img src="icons/home.png"></a></p>
-                        </div>
-                        <div class="column">
-                            <p id="icons"><a href="map.html"><img src="icons/map.png"></a></p>
-                        </div>
-                        <div class="column">
-                            <p id="icons"><a href="newsFeed.html"><img src="icons/news.png"></a></p>
-                        </div>
-                        <div class="column">
-                            <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
-                        </div>
-                        <div class="column">
-                            <p id="icons"><a href="whyCeres.html"><img src="icons/about.png"></a></p>
-                        </div>
+                <div class="columns">
+                    <div class="column">
+                        <p id="icons"><a href="home.html"><img src="icons/home.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="map.html"><img src="icons/map.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="newsFeed.html"><img src="icons/news.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="whyCeres.html"><img src="icons/about.png"></a></p>
                     </div>
                 </div>
-                <p>&nbsp;&nbsp;</p>
-                <p><span style="font-size: 11px; color: #303030;">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</span></p>
-                <p><span style="font-size: 11px; color: #303030;"><strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.</span></p>
             </div>
-        </footer>
-    </body>
-</center></html>
+            <p>&nbsp;&nbsp;</p>
+            <p><span style="font-size: 11px; color: #303030;">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</span></p>
+            <p><span style="font-size: 11px; color: #303030;"><strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
