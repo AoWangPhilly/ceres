@@ -1,0 +1,29 @@
+   <footer class="footer">
+        <div align="center">
+            <div class="container is-widescreen">
+                <div class="columns">
+                    <div class="column">
+                        <p id="icons"><a href="home.html"><img src="icons/home.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="map.html"><img src="icons/map.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="newsFeed.html"><img src="icons/news.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="whyCeres.html"><img src="icons/about.png"></a></p>
+                    </div>
+                </div>
+            </div>
+            <p>&nbsp;&nbsp;</p>
+            <p><span style="font-size: 11px; color: #303030;">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</span></p>
+            <p><span style="font-size: 11px; color: #303030;"><strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

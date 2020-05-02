@@ -1,0 +1,8 @@
+New South Wales
+Victoria
+Queensland
+South Australia if (longitude > 129 and longitude < 141) and latitude < -26
+Western Australia if longitude < 129
+Tasmania
+Northern Territory if (longitude < 138 and longitude > 129) and latitude > -26
+Australian Capital Territory 

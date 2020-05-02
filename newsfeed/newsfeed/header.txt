@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/newsfeed.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/newsfeed.js"></script>
+    <script src="js/dropdown.js"></script>
+    <title>New Feed</title>
+
+</head>
+
+<body>
+    <!-- .hero -->
+    <section class="hero is-warning is-bold is-small">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="home.html" class="navbar-item">
+                            <p style="font-size: 2rem; font-family: Great Vibes">Ceres</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" class="image">
+                        </a>
+                        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="true">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div class="navbar-menu navbar-end" id="navMenu">
+                        <a href="home.html" class="navbar-item">
+                            Home
+                        </a>
+
+                        <a href="charity.html" class="navbar-item">
+                            Charities
+                        </a>
+                        <a href="map.html" class="navbar-item">
+                            Map
+                        </a>
+                        <a href="mapinfo.html" class="navbar-item">
+                            Map Information
+                        </a>
+                        <a href="newsFeed.html" class="navbar-item is-active">
+                            News Feed
+                        </a>
+						<a href="wildfirestats.html" class="navbar-item">
+							Bushfire Statistics                            
+						</a>
+                        <a href="meetTheTeam.html" class="navbar-item">
+                            Meet the Team
+                        </a>
+                        <a href="twitterFeed.html" class="navbar-item">
+                            <img src="https://i.ya-webdesign.com/images/twitter-png-black-8.png" class="image">
+                        </a>
+                        <span class="navbar-item">
+                            <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>Download</span>
+                            </a>
+                        </span>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 style="font-size: 60px; font-family: 'Raleway', sans-serif;" class="title has-text-black-ter">
+                    News Feed
+                </h1>
+            </div>
+        </div>
+    </section>
