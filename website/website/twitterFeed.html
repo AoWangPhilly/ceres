@@ -1,21 +1,24 @@
 <html>
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
-    <!--    <link rel="stylesheet" href="css/main.css">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="jquery-3.4.1.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
     <script src="js/dropdown.js"></script>
-    <title> Ceres: Twitter Feed </title>
+	<script src="jquery-3.4.1.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title> Twitter Feed </title>
 </head>
 
 <body>
-    <!-- .hero -->
     <section class="hero is-warning is-bold is-small">
-        <!--is-warning is-bold-->
-        <!-- Hero head: will stick at the top -->
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -30,13 +33,10 @@
                             <span></span>
                         </span>
                     </div>
-                    <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-menu navbar-end" id="navMenu">
                         <div class="navbar-end">
                             <a href="home.html" class="navbar-item">
                                 Home
-                            </a>
-                            <a href="background.html" class="navbar-item">
-                                Background
                             </a>
                             <a href="charity.html" class="navbar-item">
                                 Charities
@@ -50,14 +50,14 @@
                             <a href="newsFeed.html" class="navbar-item">
                                 News Feed
                             </a>
-                            <a href="whyCeres.html" class="navbar-item">
-                                Why Ceres
-                            </a>
                             <a href="wildfirestats.html" class="navbar-item">
-                                Wildfire Statistics
+								Bushfire Statistics                            
+							</a>
+                            <a href="meetTheTeam.html" class="navbar-item">
+                                Meet the Team
                             </a>
                             <a href="twitterFeed.html" class="navbar-item is-active">
-                                <img src="https://i.ya-webdesign.com/images/twitter-png-black-8.png" class="image">
+								<img src="images/twitterDark.png" class="image">
                             </a>
                             <span class="navbar-item">
                                 <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
@@ -74,7 +74,7 @@
         </div>
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h1 style="font-size: 80px; font-family: Great Vibes" class="title has-text-black-ter">
+                <h1 style="font-size: 60px; font-family: 'Raleway', sans-serif;" class="title has-text-black-ter">
                     Twitter Feed
                 </h1>
             </div>
@@ -97,45 +97,43 @@
             left: 0;
             right: 0;
             bottom: 0;
-            top: 120px;
+            top: 215px;
         }
+
     </style>
-    <div id="iframecontent" align="center">
-        <iframe src="http://twubs.com/embed/bushfires/?messagesPerPage=25&headerBgColor=%23fcdc59&headerTextColor=%23ffffff" height="600" frameborder="0"><a href="http://twubs.com/bushfires">#bushfires</a>
-        </iframe>
-    </div>
-    <div style="width:500px;height:730px;border:0px solid #000;">&nbsp;&nbsp;</div>
-    <footer class="footer">
-        <div align="center">
-            <div class="container is-widescreen">
-                <!-- 				<span style="font-size: 50px; color: #303030;">ceres.ly</span>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" width="50">
-					<p style="font-size:14px; color: #303030">
-						ceres.ly is a design project created with the intention to bring and maintain awareness to the Australian bushfires.
-						To learn more about the people behind this website, <a href="team.html">click here</a>.
-					</p> -->
-                <p>&nbsp;&nbsp;</p>
-                <div class="columns">
-                    <div class="column">
-                        <p id="icons"><a href="home.html"><img src="icons/home.png"></a></p>
-                    </div>
-                    <div class="column">
-                        <p id="icons"><a href="map.html"><img src="icons/map.png"></a></p>
-                    </div>
-                    <div class="column">
-                        <p id="icons"><a href="newsFeed.html"><img src="icons/news.png"></a></p>
-                    </div>
-                    <div class="column">
-                        <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
-                    </div>
-                    <div class="column">
-                        <p id="icons"><a href="whyCeres.html"><img src="icons/about.png"></a></p>
+    <div class="scroll">
+        <div id="iframecontent" align="center">
+            <iframe src="http://twubs.com/embed/bushfires/?messagesPerPage=25&headerBgColor=%23fcdc59&headerTextColor=%23ffffff" height="600" frameborder="0"><a href="http://twubs.com/bushfires">#bushfires</a>
+            </iframe>
+        </div>
+        <div style="width:500px;height:70%;border:0px solid #000;">&nbsp;&nbsp;</div>
+        <footer class="footer">
+            <div align="center">
+                <div class="container is-widescreen">
+                    <div class="columns">
+                        <div class="column">
+                            <p id="icons"><a href="home.html"><img src="icons/home.png"></a></p>
+                        </div>
+                        <div class="column">
+                            <p id="icons"><a href="map.html"><img src="icons/map.png"></a></p>
+                        </div>
+                        <div class="column">
+                            <p id="icons"><a href="newsFeed.html"><img src="icons/news.png"></a></p>
+                        </div>
+                        <div class="column">
+                            <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
+                        </div>
+                        <div class="column">
+                            <p id="icons"><a href="whyCeres.html"><img src="icons/about.png"></a></p>
+                        </div>
                     </div>
                 </div>
+                <p>&nbsp;&nbsp;</p>
+                <!-- 			<p><span style="font-size: 11px; color: #303030;">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</span></p>
+                <p><span style="font-size: 11px; color: #303030;"><strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.</span></p> -->
             </div>
-            <p>&nbsp;&nbsp;</p>
-            <!-- 			<p><span style="font-size: 11px; color: #303030;">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</span></p>
-			<p><span style="font-size: 11px; color: #303030;"><strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.</span></p> -->
-        </div>
-    </footer>
-</body></html>
+        </footer>
+    </div>
+</body>
+
+</html>

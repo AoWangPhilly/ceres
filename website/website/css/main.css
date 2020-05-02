@@ -1,87 +1,29 @@
-html {
-	margin: 25px 100px 75px 100px;
-	padding: 0;
+
+#navMenu{
+	font-size: 16px; 
+	font-family: 'Manrope', sans-serif
 }
 
-body { 
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #fff8ee;  
-	padding: 0;
-}
-div {
-	padding: 1%;
-	margin-left: 5%;
-	margin-right: 5%;
-	text-align: center;
+
+.tabs{
+	font-size: 18px; 
+	font-family: 'Manrope', sans-serif
 }
 
-h1{
-	color: #ffa736; 
-	font-family: 'Great Vibes';
-	font-size: 100px; 
-	line-height: 80px; 
-	font-weight: normal; 
-	margin-bottom: 0px; 
-	margin-top: 40px; 
-	text-align: center; 
-	text-shadow: 2px 1px 1px #fa920d;
+.title{
+	font-family: 'Manrope', sans-serif	
+
 }
 
-h3 {
-	color: #ff9f41; 
-	font-family: 'Spartan';
-	font-size: 25px; 
-	font-style: bold; 
-	margin-bottom: 10px; 
-	margin-top: 10px; 
-	margin-bottom: 10px; 
-	text-align: center; 
+.content{
+	font-family: 'Quicksand', sans-serif;
 }
 
-p, h5 {
-    font-family: "Trebuchet MS", Helvetica, sans-serif	;
-	color: #3d3a33; 
-	
+.card-image {
+  padding: 25px 10px 10px 15px;
 }
 
-/* navigation bar */
-
-ul {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  list-style-type: none;
-  font-style: bold;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #f3c875;
-  display: inline-block;
-  list-style-type: none;
+#links{
+    text-decoration: none;
 }
-
-li {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-style: bold;
-	float: left;
-}
-
-li a {
-  font-family: 'Spartan';
-  font-size: 15px; 
-  font-style: bold;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #eeb74f;
-}
-
-footer.footer{
-	background-color:#26272b;
-}
-
 

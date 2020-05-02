@@ -4,23 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="css/scrollbar.css">
+	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/animate_hero.css">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
-    <script src="jquery-3.4.1.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
     <script src="js/dropdown.js"></script>
-    <title> Ceres: Home </title>
+	<script src="jquery-3.4.1.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title> Home </title>
 
     <!--Credit to: https://bulma.io/documentation/components/navbar/-->
 </head>
 
 <body>
-    <!-- .hero -->
     <section style="box-sizing: border-box;" class="hero is-warning is-bold is-small">
-        <!--is-warning is-bold-->
-        <!-- Hero head: will stick at the top -->
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -40,7 +40,6 @@
                         <a href="home.html" class="navbar-item is-active">
                             Home
                         </a>
-
                         <a href="charity.html" class="navbar-item">
                             Charities
                         </a>
@@ -53,12 +52,14 @@
                         <a href="newsFeed.html" class="navbar-item">
                             News Feed
                         </a>
-
-                        <a href="wildfirestats.html" class="navbar-item">
-                            Wildfire Statistics
+						<a href="wildfirestats.html" class="navbar-item">
+							Bushfire Statistics                            
+						</a>
+                        <a href="meetTheTeam.html" class="navbar-item">
+                            Meet the Team
                         </a>
                         <a href="twitterFeed.html" class="navbar-item">
-                            <img src="https://i.ya-webdesign.com/images/twitter-png-black-8.png" class="image">
+                            <img src="images/twitterDark.png" class="image">
                         </a>
                         <span class="navbar-item">
                             <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
@@ -74,16 +75,15 @@
             </nav>
         </div>
 
-        <!-- /.hero -->
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="columns is-centered is-vcentered">
                     <div class="column">
-                        <h1 id="size-change" class="title is-1 has-text-black-ter header-title animate-pop-in centered">
+                        <h1 id="size-change" class="title is-1 has-text-black-ter header-title animate-pop-in centered" >
                             Ceres
                         </h1>
-                        <h2 class="subtitle is-size-4 header-subtitle animate-pop-in">
-                            See the Fire, Fight the Fire!
+                        <h2  class="subtitle is-size-4 header-subtitle animate-pop-in">
+                            See the fire, fight the fire!
                         </h2>
                     </div>
                     <div class="column">
@@ -98,15 +98,13 @@
                     <ul>
                         <li class="is-active"><a href="#overview">Overview</a></li>
                         <li><a href="#background">Background</a></li>
-                        <li><a href="#map-information">Map Information</a></li>
-                        <li><a href="#why-ceres">Why Ceres?</a></li>
+                        <li><a href="#aboutUs">About Us?</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </section>
 
-    <!-- .section -->
     <section class="section has-background-light">
         <div class="container">
             <h2 class="title">Overview</h2>
@@ -116,9 +114,8 @@
                         <div class="media-content">
                             <div class="content">
                                 <h1 class="title is-size-4">Ceres?</h1>
-                                <p class="is-size-5">
-                                    Ceres is a website dedicated to spreading and promoting awareness to the current wildfires in Australia. It features an interactive map, news feed, and additional information for people to not only learn more
-                                    about the sitation, but also about how they can help. <br> ＼(＾∀＾)メ(＾∀＾)ノ
+                                <p class="is-size-6">
+                                    Ceres is a website dedicated to spreading and promoting awareness to the annual Australian bushfires. We not only offer an interactive map and various live feeds, but also additional resources for people to learn more about the situation and how they can help.
                                 </p>
                             </div>
                         </div>
@@ -129,10 +126,8 @@
                         <div class="media-content">
                             <div class="content">
                                 <h1 class="title is-size-4">Map?</h1>
-                                <!--<i class="fas fa-globe-asia"></i>-->
-                                <p class="is-size-5">
-                                    Like our slogan, we believe that if people actually see the fires and learn more about them, then they
-                                    will be equipped with the knowledge to actually fight the fire. The map is created from Folium, a Python Library and the fires are current and up-to-date, webscraped from NASA's dataframes.<br>⦤(^ー^)⦥
+                                <p class="is-size-6">
+                                    Like our slogan, we believe that visualization will help people recognize and contribute to the cause. As a result, one of our main features is an interactive live map! See the where the action is taking place and earn more about how to use the map <a href="mapinfo.html" id = "links">here</a>. 
                                 </p>
                             </div>
                         </div>
@@ -142,11 +137,9 @@
                     <article class="media notification has-background-grey-lighter">
                         <div class="media-content">
                             <div class="content">
-                                <h1 class="title is-size-4">News Feed?</h1>
-                                <!--<i class="far fa-newspaper"></i>-->
-                                <p class="is-size-5">
-                                    We hope that everyone that uses this
-                                    website comes out learning something new from our active news feed. We hope to provide a current weekly news feed, but also a bi-weekly/monthly newsletter very soon! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+                                <h1 class="title is-size-4">Live Feeds?</h1>
+                                <p class="is-size-6">
+									To complement the map, we also have a news and Twitter feed that update automatically with relebant information! Check back often to see what’s happening that's not on the map! We hope that everyone who uses this website comes out learning something new!
                                 </p>
                             </div>
                         </div>
@@ -154,49 +147,97 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- /.section -->
-    <!--
-    
-    <section class="section has-background">
         <div class="container">
-            <h2 class="title">How much do you know about the Australian bushfires?</h2>
-            <div class="level">
-                <div class="level-left">
-                    <div class="level-item">
-                        <img class="image" src="https://images.immediate.co.uk/production/volatile/sites/4/2020/01/GettyImages-1197212072-5d6092f.jpg?quality=90&crop=4px%2C117px%2C931px%2C401px&resize=931%2C396" width=750 alt="A house burning in Lake Conjola, New South Wales, on New Year’s Eve.">
-                    </div>
+            <h2 class="title">Background</h2>
+            <div class="columns">
+                <div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">What Fires?</h1>
+                                <p class="is-size-6">
+									Although Australia deals with bushfires annually, the past season impacted the country greatly. From destroying homes to affecting the environment, even the economy and tourism was impacted. It may be over now, but there's no telling what the next season brings. </p>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <p class="content" style="padding-left: 5rem;">
-                    Despite all the media coverage and all the support, the Australian bushfires are still a major issue which is why it's so important to maintain and bring awareness to this situation.
-                    Although Australia deals with bushfires yearly, the 2019-2020 season definitely stands out for its intensity and impact on the country. Some of the effects include destroying homes and animal habitats, causing smoke trails, and even affecting Australia's economy and tourism. Furthermore, despite the January rainfall, the bushfires are still a concern and many are worried for what’s to come.
+				<div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+								<a href="https://www.weforum.org/agenda/2020/01/australia-bushfires-size-impact-wildlife-emissions/"><img src="images/fire2.png" width="700"></a> 
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+			<div class="columns">
+				<div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+								<a href="https://www.theatlantic.com/photo/2019/11/photos-of-australias-catastrophic-bushfires/602350/#img02"><img src="images/fire.png" width="400"></a> 
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">More Information?</h1>
+                                <p class="is-size-6">
+									Check out the articles below to learn more!
+                                    <p> <a href="https://disasterphilanthropy.org/disaster/2019-australian-wildfires/" id = "links">"2019-2020 Australian Bushfires"</a> </p>
+                                    <p> <a href="https://www.nytimes.com/2020/01/10/world/australia/bushfire.html" id = "links">"What to Read on Australia’s Bushfire Crisis"</a> </p>
+                                    <p> <a href="https://www.bbc.co.uk/news/amp/world-australia-50951043" id = "links">"Australia fires: A visual guide to the bushfire crisis"</a> </p>
+                                    <p> <a href="https://www.bbc.com/news/in-pictures-50971879" id = "links">"Latest photos of the devastating Australian bushfires"</a> </p>
+                                    <p> <a href="https://www.theguardian.com/australia-news/2020/jan/21/australia-fires-has-the-rain-put-out-the-bushfires-and-could-they-flare-again" id = "links">"Australia fires: has the rain put out the bushfires and could they flare again?"</a> </p>
+                                    <p> <a href="https://www.thesun.co.uk/news/10317573/australia-fires-map-where-are-bushfires/" id = "links">"Australia fires map – where are the bushfires now?"</a> </p>
 
-                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="title">About Us</h2>
+            <div class="columns">
+                <div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Reliability?</h1>
+                                <p class="is-size-6">
+									Our interactive map, which was created using Folium, uses data web scraped from NASA’s data frames. Also known as EarthData, two satellites are used to detect fire activity every one or two days! For more information, check out NASA’s FAQ <a href="https://earthdata.nasa.gov/faq/firms-faq" id = "links">here</a>. Likewise, our charities are chosen for their contribution to the cause and we use NewsAPI to retreive articles.   </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Relevancy?</h1>
+                                <p class="is-size-6">
+									As mentioned previously, our map updates frequently to provide you with the latest data! The same applies to our news and Twitter feed and we hope to add more feeds in the future! Even though the bushfires may not be as relevant now, that doesn’t mean that there won’t be any news, so we aim to provide you with all that we can!  </div>
+                        </div>
+                    </article>
+                </div>
+				<div class="column">
+                    <article class="media notification has-background-grey-lighter">
+                        <div class="media-content">
+                            <div class="content">
+								<img src="images/nasaTwitter.png" width="700">
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section has-background">
-        <div class="container">
-            <h2 class="title">Why Ceres?</h2>
-            <div class="level">
-                There are a ton of websites that provide you constant and accessible information about the Australian bushfires. But why choose Ceres?
-                One of the main reasons is because Ceres makes use of reliable information. More specifically, we use EarthData provided by NASA as our main source of data. EarthData uses 2 satellites to collect the data: VIIRS (Visible Infrared Imaging Radiometer Suite) and MODIS (Moderate Resolution Imagin Spectroradiometer). With these 2 satellites: EarthData can detect where the fires are active for every 1-2 days.
-                More information can be found in NASA's FAQ here.<br><br>
-                Now for what we've done, after locating that data from this source, we will download the data as a .csv file and clean up the data as much as we possibly can to ensure that the website understands everything we feed it. Additionally, there is a brightness category in the file that measures the fires in Kelvin. Finally, we upload the data onto our map with custom pointers to ensure that everyone can clearly see what is going on in Australia. Furthermore, we strive to keep our data relevant by updating this often.
-                <div class="level-right">
-                    <div class="level-item">
-                        <img class="image" style="padding-left:10rem; padding-right:5rem; " src="https://firms.modaps.eosdis.nasa.gov/images/NASA_logo.svg">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
--->
-
-    <!--https://firms.modaps.eosdis.nasa.gov/images/NASA_logo.svg-->
-    <!-- footer -->
     <footer class="footer is-warning">
         <div align="center">
             <div class="container is-widescreen">
@@ -221,21 +262,8 @@
                         <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
                     </div>
                     <div class="column">
-                        <p id="icons"><a href="whyCeres.html"><img src="icons/about.png"></a></p>
+                        <p id="icons"><a href="meetTheTeam.html"><img src="icons/about.png"></a></p>
                     </div>
-
-                    <!-- 					<div class="column">
-						<div align = "left">
-							<p style="font-size:11px">Quick overview of our website!</p>
-							<p style="font-size:11px">Learn more about the Australian bushfires!</p>
-							<p style="font-size:11px">Find charities to donate to!</p>
-							<p style="font-size:11px">Check out our live interactive map!</p>
-							<p style="font-size:11px">How does our map work?</p>
-							<p style="font-size:11px">Check out our news feed about the bushfires!</p>
-							<p style="font-size:11px">Why should you use our website?</p>
-							<p style="font-size:11px">Get an overview of the bushfires timeline!</p>
-						</div>
-					</div> -->
                 </div>
             </div>
             <p>&nbsp;&nbsp;</p>
@@ -244,8 +272,5 @@
         </div>
 
     </footer>
-    <!-- /.footer -->
-
 </body>
-
 </html>
