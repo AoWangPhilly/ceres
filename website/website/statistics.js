@@ -76,9 +76,9 @@ function createBarGraph(coordinates, date) {
 
         // Counts fires for Western, Northern, and Southern
         for (let coord of dayCoordinates) {
+            
+            long = coord[1], lat = coord[0];
             // Western Australia
-            long = coord[0], lat = coord[1]
-
             if (long <= 129) {
                 regions["Western Australia"]++;
                 dayCoordinates = dayCoordinates.filter(c => c !== coord);
@@ -107,7 +107,7 @@ function createBarGraph(coordinates, date) {
 
             }
         }
-
+        
         var bar = [
             {
                 x: Object.keys(regions),

@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
     <script src="js/dropdown.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -28,47 +27,48 @@
                             <p style="font-size: 2rem; font-family: Great Vibes">Ceres</p>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" class="image">
                         </a>
-                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
+                        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="true">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
                     </div>
+
                     <div class="navbar-menu navbar-end" id="navMenu">
-                        <div class="navbar-end">
-                            <a href="home.html" class="navbar-item">
-                                Home
+                        <a href="home.html" class="navbar-item">
+                            Home
+                        </a>
+
+                        <a href="charity.html" class="navbar-item">
+                            Charities
+                        </a>
+                        <a href="map.html" class="navbar-item">
+                            Map
+                        </a>
+                        <a href="mapinfo.html" class="navbar-item">
+                            Map Information
+                        </a>
+                        <a href="newsFeed.html" class="navbar-item">
+                            News Feed
+                        </a>
+						<a href="wildfirestats.html" class="navbar-item is-active">
+							Bushfire Statistics                            
+						</a>
+                        <a href="meetTheTeam.html" class="navbar-item">
+                            Meet the Team
+                        </a>
+                        <a href="twitterFeed.html" class="navbar-item">
+                            <img src="https://i.ya-webdesign.com/images/twitter-png-black-8.png" class="image">
+                        </a>
+                        <span class="navbar-item">
+                            <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>Download</span>
                             </a>
-                            <a href="charity.html" class="navbar-item">
-                                Charities
-                            </a>
-                            <a href="map.html" class="navbar-item">
-                                Map
-                            </a>
-                            <a href="mapinfo.html" class="navbar-item">
-                                Map Information
-                            </a>
-                            <a href="newsFeed.html" class="navbar-item">
-                                News Feed
-                            </a>
-                            <a href="wildfirestats.html" class="navbar-item is-active">
-                                Bushfire Statistics
-                            </a>
-                            <a href="meetTheTeam.html" class="navbar-item">
-                                Meet the Team
-                            </a>
-                            <a href="twitterFeed.html" class="navbar-item">
-                                <img src="images/twitterDark.png" class="image">
-                            </a>
-                            <span class="navbar-item">
-                                <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
-                                    <span class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </span>
-                                    <span>Download</span>
-                                </a>
-                            </span>
-                        </div>
+                        </span>
+
                     </div>
                 </div>
             </nav>
@@ -76,34 +76,30 @@
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h1 style="font-size: 60px; font-family: 'Raleway', sans-serif;" class="title has-text-black-ter">
-                    Bushfire Statistics
+                    Bushfire Dashboard
                 </h1>
             </div>
         </div>
     </section>
 
-    <!-- CHARTS -->
     <section class="section">
         <div class="container">
-            <div class="columns">
-                <div class="column">
+
+            <div class="columns is-multiline ">
+                <div class="column is-one-half">
                     <div id="myLineGraph">
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-half">
                     <div id="myBarGraph">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ./CHARTS -->
-
-    <!-- CHARTS -->
 
     <script src="statistics.js">
     </script>
-    <!-- ./CHARTS -->
 
     <footer class="footer">
         <div align="center">
@@ -132,6 +128,4 @@
         </div>
 
     </footer>
-</body>
-
-</html>
+</body></html>
