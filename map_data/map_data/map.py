@@ -8,8 +8,9 @@ import datetime
 import subprocess
 from folium import plugins
 from bs4 import BeautifulSoup
-import plotly.offline 
+import plotly.offline
 import plotly.graph_objs as go
+
 
 def retrieve_data(country, sensor, time):
     """Webscrapes the NASA website for the wildfire data
@@ -170,13 +171,15 @@ def main():
 
     # main_df.to_csv("main_df.csv")
     formatted = get_week_time_coordinates(main_df)
-    
+
     # Creates the line graph
-    data = [go.Scatter(x=formatted[1], y=[len(coord) for coord in formatted[0]], mode="lines")]
+    data = [go.Scatter(x=formatted[1], y=[len(coord)
+                                          for coord in formatted[0]], mode="lines")]
     layout = go.Layout(title="Australian's Weekly Bushfire Progression")
     fig = go.Figure(data, layout)
-    plotly.offline.plot(fig, filename ="/home/aow252/ceres/website/wildfirestats.html", auto_open=False)
-    
+    plotly.offline.plot(
+        fig, filename="/home/aow252/ceres/website/wildfirestats.html", auto_open=False)
+
     plugins.HeatMapWithTime(
         formatted[0],
         formatted[1],

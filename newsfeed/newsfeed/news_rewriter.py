@@ -1,15 +1,18 @@
 import pandas as pd
+
+
 def rewrite_html():
     body, html = "", ""
     beginning_body = """    <section class="section">
             <div class="container">
                 <div class="columns is-multiline">"""
-    news_info = pd.read_csv("/Users/aowang/715/newsfeed/NewsData/cleaned_news.csv")
+    news_info = pd.read_csv(
+        "/Users/aowang/715/newsfeed/NewsData/cleaned_news.csv")
 
     with open("/Users/aowang/715/newsfeed/header.txt", "r") as header, \
-         open("/Users/aowang/715/newsfeed/footer.txt", "r") as footer:
-            head = header.read()
-            foot = footer.read()
+            open("/Users/aowang/715/newsfeed/footer.txt", "r") as footer:
+        head = header.read()
+        foot = footer.read()
 
     head += beginning_body
 
