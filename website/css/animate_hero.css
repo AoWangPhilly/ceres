@@ -1,0 +1,68 @@
+/*Credit to https://cssanimation.rocks/animating-hero-header/*/
+
+.header-subtitle {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.animate-pop-in {
+    animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity: 0;
+}
+
+.rocky-dashed {
+    animation-delay: 1.2s;
+}
+
+.header-title {
+    animation-delay: .8s;
+}
+
+.header-subtitle {
+    animation-delay: 1s;
+}
+
+/* Animations */
+
+@keyframes fade-slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes rotate-up {
+    100% {
+        transform: rotateZ(-4deg);
+    }
+}
+
+/*Centers image*/
+.center-image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#size-change {
+    padding-right: 0;
+    font-size: 10rem;
+    font-family: "Great Vibes";
+}

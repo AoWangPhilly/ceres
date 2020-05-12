@@ -15,7 +15,7 @@
                         <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
                     </div>
                     <div class="column">
-                        <p id="icons"><a href="whyCeres.html"><img src="icons/about.png"></a></p>
+                        <p id="icons"><a href="meetTheTeam.html"><img src="icons/about.png"></a></p>
                     </div>
                 </div>
             </div>
