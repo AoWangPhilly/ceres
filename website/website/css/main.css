@@ -1,0 +1,32 @@
+
+#navMenu{
+	font-size: 17px; 
+	font-family: 'Manrope', sans-serif
+}
+
+.tabs{
+	font-size: 18px; 
+	font-family: 'Manrope', sans-serif
+}
+
+.title{
+	font-family: 'Manrope', sans-serif	
+
+}
+
+#webHeader{
+	font-size: 60px; 
+	font-family: 'Raleway', sans-serif;
+}
+.content{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.card-image {
+  padding: 25px 10px 10px 15px;
+}
+
+#links{
+    text-decoration: none;
+}
+

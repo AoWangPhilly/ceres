@@ -1,3 +1,3 @@
-https://ow-wow-wang.github.io/ceres/website/home.html
+https://tinyurl.com/rucere-ious
 
-* Map updates every four hours
+* Website has to be manually updated.

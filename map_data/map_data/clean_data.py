@@ -39,7 +39,7 @@ class CleanData:
         )[["latitude", "longitude", "acq_date"]]]
         for df in dfs:
             master_df.append(df.get_high_confidence()[
-                             ["latitude", "longitude", "acq_date"]])
+                             ["latitude", "longitude", "acq_date", "frp"]])
         return pd.concat(master_df)
 
     def set_country(self, country):
@@ -74,6 +74,10 @@ if __name__ == "__main__":
     modis, viirs, noaa = CleanData(sensor="MODIS"), CleanData(
         sensor="viirs"), CleanData(sensor="noaa")
     collected = modis.combine_data_sets(viirs, noaa)
+
+    frp_series = collected.frp[collected.frp.notna()]
+    frp_series.to_csv("/Users/aowang/715/website/frp.csv", index=False)
+
     plot_data = get_week_time_coordinates(collected)
     with open("/Users/aowang/715/website/week_data.json", "w") as data:
         data.write(str(plot_data).replace("'", '"'))
