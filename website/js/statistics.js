@@ -148,6 +148,7 @@ function createBarGraph(coordinates, date) {
  * Purpose is to show how strong the fires are currently
  */
 d3.csv("frp.csv", function (data) {
+    console.log(data);
     let layout = {
         title: "Australia Fire Radiative Power(FRP) in Megawatts(MW)",
         xaxis: {title: "FRP"}, 
@@ -155,7 +156,7 @@ d3.csv("frp.csv", function (data) {
     }
     let arr = []
     for (let key in data) {
-        arr.push(data[key]["19.2"])
+        arr.push(data[key].FRP)
     }
     data = arr.map(frp => parseInt(frp, 10));
     let trace = {

@@ -1,6 +1,10 @@
 <html>
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
@@ -20,9 +24,7 @@
 </head>
 
 <body>
-    <!-- .hero -->
     <section class="hero is-warning is-bold is-small">
-        <!-- Hero head: will stick at the top -->
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -79,9 +81,9 @@
         </div>
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h1 id = "webHeader" class="title has-text-black-ter">
+                <h1 style="font-size: 60px; font-family: 'Raleway', sans-serif;" class="title has-text-black-ter">
                     News Feed
                 </h1>
             </div>
         </div>
-    </section>
+    </section>    

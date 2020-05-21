@@ -23,3 +23,8 @@ a:active {
 	width:60px;
     height: auto;
 }
+
+#footerInfo{
+  font-size: 11px; 
+  color: #525252;
+}

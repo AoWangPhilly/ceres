@@ -1,6 +1,10 @@
 <html>
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -14,162 +18,201 @@
     <script src="js/dropdown.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
     <title> Map Information </title>
 
 </head>
 
 <body>
-        <section class="hero is-warning is-bold is-small">
-            <div class="hero-head">
-                <nav class="navbar">
-                    <div class="container">
-                        <div class="navbar-brand">
-                            <a href="home.html" class="navbar-item">
-                                <p style="font-size: 2rem; font-family: Great Vibes">Ceres</p>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png" class="image">
-                            </a>
-                            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="true">
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                            </a>
-                        </div>
-
-                        <div class="navbar-menu navbar-end" id="navMenu">
-                            <a href="home.html" class="navbar-item">
-                                Home
-                            </a>
-                            <a href="charity.html" class="navbar-item">
-                                Charities
-                            </a>
-                            <a href="map.html" class="navbar-item">
-                                Map
-                            </a>
-                            <a href="mapinfo.html" class="navbar-item is-active">
-                                Map Information
-                            </a>
-                            <a href="newsFeed.html" class="navbar-item">
-                                News Feed
-                            </a>
-                            <a href="wildfirestats.html" class="navbar-item">
-                                Bushfire Statistics
-                            </a>
-                            <a href="meetTheTeam.html" class="navbar-item">
-                                Meet the Team
-                            </a>
-                            <a href="twitterFeed.html" class="navbar-item">
-                                <img src="images/twitterDark.png" class="image">
-                            </a>
-                            <a href="privacyPolicy.html" class="navbar-item">
-                                Privacy
-                            </a>
-                            <span class="navbar-item">
-                                <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
-                                    <span class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </span>
-                                    <span>Download</span>
-                                </a>
-                            </span>
-
-                        </div>
+    <section class="hero is-warning is-bold is-small">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="home.html" class="navbar-item">
+                            <p style="font-size: 2rem; font-family: Great Vibes">Ceres</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ceres_symbol.svg/1024px-Ceres_symbol.svg.png"
+                                class="image">
+                        </a>
+                        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu"
+                            aria-expanded="true">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
                     </div>
-                </nav>
-            </div>
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <h1 id = "webHeader" class="title has-text-black-ter">
-                        Map Information
-                    </h1>
+
+                    <div class="navbar-menu navbar-end" id="navMenu">
+                        <a href="home.html" class="navbar-item">
+                            Home
+                        </a>
+                        <a href="charity.html" class="navbar-item">
+                            Charities
+                        </a>
+                        <a href="map.html" class="navbar-item">
+                            Map
+                        </a>
+                        <a href="mapinfo.html" class="navbar-item is-active">
+                            Map Information
+                        </a>
+                        <a href="newsFeed.html" class="navbar-item">
+                            News Feed
+                        </a>
+                        <a href="wildfirestats.html" class="navbar-item">
+                            Bushfire Statistics
+                        </a>
+                        <a href="meetTheTeam.html" class="navbar-item">
+                            Meet the Team
+                        </a>
+                        <a href="twitterFeed.html" class="navbar-item">
+                            <img src="images/twitterDark.png" class="image">
+                        </a>
+                        <span class="navbar-item">
+                            <a href="https://github.com/ow-wow-wang/ceres" class="button is-inverted">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>Download</span>
+                            </a>
+                        </span>
+
+                    </div>
                 </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 id="webHeader" class="title has-text-black-ter">
+                    Map Information
+                </h1>
             </div>
-        </section>
-        <section class="section has-background-light">
+        </div>
+    </section>
+    <section class="section container is-widescreen">
+        <div class="content" id = "subtitle">
+            <center>
+                <p>Learn more about how our <a href="map.html" id="links">map</a> works and how you can use it effectively!</p>
+            </center>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title is-size-4">Overview</p>
+                    <div class="content">
+                        <p> The map displays updated data on the Australian busfires! <br>
+                            The <span style="color: red">red</span> areas are where the fires are most extreme. <br>
+                            The <span style="color: darkgreen">green</span> areas are where the fires are dangerous,
+                            but not
+                            as extreme as red areas. <br>
+                            The <span style="color: blue">blue</span> areas are where the fires are least dangerous
+                            and
+                            extreme, but can still be dangerous. <br></p>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent is-6">
+                <article class="tile is-child box">
+                    <div class="content">
+                        <center> <img src="mapinfogif/map4.gif" width="700">
+                        </center>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <div class="content">
+                        <center> <img src="mapinfogif/map1.gif" width="700">
+                        </center>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent is-6">
+                <article class="tile is-child box">
+                    <p class="title is-size-4">Moving & Zooming</p>
+                    <div class="content">
+                        <p>On the top left corner of the map, there are zoom buttons, the + being the zoom-in
+                            button, and the - being the zoom-out button. These buttons are optional, as the user
+                            can also use the scroll wheel to manage these functionalities. Scroll back to
+                            zoom-in and scroll forward to zoom-out. The user can also use the trackpad, swiping
+                            into zoom-in and swiping out to zoom-out.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title is-size-4">Time Slider</p>
+                    <div class="content">
+                        <p>On the bottom left of the map, there’s a time slider to view the weekly progression
+                            of the wildfire spread. The time slider has buttons to go back and forward one frame
+                            and multiple frames. There is an option to loop over and a slider to increase or
+                            decrease the time of looping through the frames. The timer slider also shows the
+                            date of the fires by year, month, date. </p>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent is-6">
+                <article class="tile is-child box">
+                    <div class="content">
+                        <center> <img src="mapinfogif/map2.gif" width="700">
+                        </center>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-6">
+                <article class="tile is-child box">
+                    <div class="content">
+                        <center> <img src="mapinfogif/map3.gif" width="700">
+                        </center>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title is-size-4">Mini Map</p>
+                    <div class="content">
+                        <p>Below the time slider shows the scale of the map and changes when the map is zoomed
+                            in or out. The bottom right shows a mini-map, so it’ll be easier to navigate through
+                            the world. Just click and drag! Below that shows the coordinate of your cursor on
+                            the map. Aside from that click the top right corner to customize your map!</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <footer class="footer is-warning">
+        <div align="center">
             <div class="container is-widescreen">
-                <article class="media notification has-background-grey-lighter">
-                    <div class="media-content">
-                        <div class="content">
-                            <h1 class="title is-size-4">How Does the Map Work?</h1>
-                            The map page shows the relevant areas for the Australian Wildfires. <br>
-                            The <span style="color: red">Red</span> areas are where the fires are most extreme. <br>
-                            The <span style="color: darkgreen">Green</span> areas are where the fires are dangerous, but not as extreme as red areas. <br>
-                            The <span style="color: blue">Blue</span> areas are where the fires are least dangerous and extreme, but can still be dangerous. <br>
-                        </div>
-                </article>
                 <div class="columns">
                     <div class="column">
-                        <article class="media notification has-background-grey-lighter">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>On the top left corner of the map, there are zoom buttons, the + being the zoom-in button, and the - being the zoom-out button. These buttons are optional, as the user can also use the scroll wheel to manage these functionalities. Scroll back to zoom-in and scroll forward to zoom-out. The user can also use the trackpad, swiping into zoom-in and swiping out to zoom-out.</p>
-                                    <img src="mapinfogif/mapinfo1.gif">
-                                </div>
-                            </div>
-                        </article>
+                        <p id="icons"><a href="home.html"><img src="icons/home.png"></a></p>
                     </div>
                     <div class="column">
-                        <article class="media notification has-background-grey-lighter">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>On the top left corner of the map, there are zoom buttons, the + being the zoom-in button, and the - being the zoom-out button. These buttons are optional, as the user can also use the scroll wheel to manage these functionalities. Scroll back to zoom-in and scroll forward to zoom-out. The user can also use the trackpad, swiping into zoom-in and swiping out to zoom-out.</p>
-                                    <img src="mapinfogif/mapinfo2.gif">
-                                </div>
-                            </div>
-                        </article>
+                        <p id="icons"><a href="map.html"><img src="icons/map.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="newsFeed.html"><img src="icons/news.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
+                    </div>
+                    <div class="column">
+                        <p id="icons"><a href="privacyPolicy.html"><img src="icons/about.png"></a></p>
                     </div>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <article class="media notification has-background-grey-lighter">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>On the bottom left of the map, there’s a time slider to view the weekly progression of the wildfire spread. The time slider has buttons to go back and forward one frame and multiple frames. There is an option to loop over and a slider to increase or decrease the time of looping through the frames. The timer slider also shows the date of the fires by year, month, date. </p>
-                                    <img src="mapinfogif/mapinfo3.gif">
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="column">
-                        <article class="media notification has-background-grey-lighter">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>Below the time slider shows the scale of the map and changes when the map is zoomed in or out. The bottom right shows a mini-map, so it’ll be easier to navigate through the world. Just click and drag! Below that shows the coordinate of your cursor on the map.</p>
-                                    <img src="mapinfogif/mapinfo4.gif">
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                </article>
             </div>
-        </section>
-        <footer class="footer is-warning">
-            <div align="center">
-                <div class="container is-widescreen">
-                    <div class="columns">
-                        <div class="column">
-                            <p id="icons"><a href="home.html"><img src="icons/home.png"></a></p>
-                        </div>
-                        <div class="column">
-                            <p id="icons"><a href="map.html"><img src="icons/map.png"></a></p>
-                        </div>
-                        <div class="column">
-                            <p id="icons"><a href="newsFeed.html"><img src="icons/news.png"></a></p>
-                        </div>
-                        <div class="column">
-                            <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
-                        </div>
-                        <div class="column">
-                            <p id="icons"><a href="meetTheTeam.html"><img src="icons/about.png"></a></p>
-                        </div>
-                    </div>
-                </div>
-                <p>&nbsp;&nbsp;</p>
-                <p><span style="font-size: 11px; color: #303030;">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</span></p>
-                <p><span style="font-size: 11px; color: #303030;"><strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.</span></p>
-            </div>
-        </footer>
+            <p>&nbsp;&nbsp;</p>
+            <p id="footerInfo">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php"
+                id="links">MIT</a>. <br>
+            Bulma by <a href="https://jgthms.com" id="links">Jeremy Thomas</a>.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

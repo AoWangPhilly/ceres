@@ -15,13 +15,14 @@
                         <p id="icons"><a href="twitterFeed.html"><img src="icons/twitter.png"></a></p>
                     </div>
                     <div class="column">
-                        <p id="icons"><a href="meetTheTeam.html"><img src="icons/about.png"></a></p>
+                        <p id="icons"><a href="privacyPolicy.html"><img src="icons/about.png"></a></p>
                     </div>
                 </div>
             </div>
             <p>&nbsp;&nbsp;</p>
-            <p><span style="font-size: 11px; color: #303030;">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</span></p>
-            <p><span style="font-size: 11px; color: #303030;"><strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.</span></p>
+            <p id="footerInfo">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php"
+                id="links">MIT</a>. <br>
+            Bulma by <a href="https://jgthms.com" id="links">Jeremy Thomas</a>.</p>
         </div>
     </footer>
 </body>
