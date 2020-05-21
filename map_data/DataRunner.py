@@ -20,12 +20,12 @@ def collectAndClean():
     print("Web scraping NASA satellite data...", end="")
     modis, viirs, noaa = CleanData(sensor="MODIS"), CleanData(
         sensor="viirs"), CleanData(sensor="noaa")
-    print("DONE!! At {}".format(datetime.datetime.now()))
+    print("DONE!! At {}\n".format(datetime.datetime.now()))
 
     # Combines the three dataframes
     print("Combining and cleaning...", end="")
     collected = modis.combine_data_sets(viirs, noaa)
-    print("DONE!! At {}".format(datetime.datetime.now()))
+    print("DONE!! At {}\n".format(datetime.datetime.now()))
 
     # Gets the fire radiative power from the combined dataframe and
     # saves it as a CSV file
@@ -34,7 +34,7 @@ def collectAndClean():
     frp_series.columns = ["FRP"]
     frp_series.to_csv(
         "/home/aow252/ceres-bucket-1/ceres/website/frp.csv", index=False)
-    print("DONE!! At {}".format(datetime.datetime.now()))
+    print("DONE!! At {}\n".format(datetime.datetime.now()))
 
     print("Mapping wildfire data...", end="")
     # Gets the mapping of coordinates of wildfires per day and saves it
@@ -42,7 +42,7 @@ def collectAndClean():
     plot_data = get_week_time_coordinates(collected)
     with open("/home/aow252/ceres-bucket-1/ceres/website/week_data.json", "w") as data:
         data.write(str(plot_data).replace("'", '"'))
-    print("DONE!! At {}".format(datetime.datetime.now()))
+    print("DONE!! At {}\n".format(datetime.datetime.now()))
 
 def runGit():
     print("Committing and Pushing...", end="")
@@ -69,8 +69,8 @@ def main():
 
 
 # Runs the script every 12 hours
-#schedule.every(12).hours.do(main)
-#while True:
-#    schedule.run_pending()
-#    time.sleep(1)
-main()
+schedule.every(12).hours.do(main)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+
