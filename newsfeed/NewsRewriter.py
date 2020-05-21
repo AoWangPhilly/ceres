@@ -14,7 +14,6 @@ def rewrite_html():
     """The function rewrites the news feed page by pulling the new CSV file and replacing the old URL and image links with 
        more relevant news."""
 
-    
     body, html = "", ""
     beginning_body = """    <section class="section">
             <div class="container">
@@ -22,18 +21,18 @@ def rewrite_html():
 
     # Reads in the URL's as a Pandas DataFrame
     news_info = pd.read_csv(
-        "/Users/aowang/715/newsfeed/NewsData/cleaned_news.csv")
+        "/home/aow252/ceres-bucket-1/ceres/newsfeed/NewsData/cleaned_news.csv")
 
-    # Reads in the HTML header and footer in a seperate textfile 
-    with open("/Users/aowang/715/newsfeed/header.txt", "r") as header, \
-            open("/Users/aowang/715/newsfeed/footer.txt", "r") as footer:
+    # Reads in the HTML header and footer in a seperate textfile
+    with open("/home/aow252/ceres-bucket-1/ceres/newsfeed/header.txt", "r") as header, \
+            open("/home/aow252/ceres-bucket-1/ceres/newsfeed/footer.txt", "r") as footer:
         head = header.read()
         foot = footer.read()
 
     head += beginning_body
 
     # Rewriting the HTML file
-    with open("/Users/aowang/715/website/newsFeed.html", "w") as newsFeed:
+    with open("/home/aow252/ceres-bucket-1/ceres/website/newsFeed.html", "w") as newsFeed:
 
         # Loops through news dataframe to retrieve the news aricle's title, URL, and image URL
         for news in news_info.iterrows():

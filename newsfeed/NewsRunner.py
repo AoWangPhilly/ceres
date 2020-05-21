@@ -29,14 +29,17 @@ def clean_data(df_news):
     df_news.drop_duplicates(subset="title", keep=False,
                             inplace=True)  # removes repeat news
     cleaned_news = df_news[['title', 'url', 'urlToImage']]
-    cleaned_news.to_csv("/Users/aowang/715/newsfeed/NewsData/cleaned_news.csv")
+    cleaned_news.to_csv(
+        "/home/aow252/ceres-bucket-1/ceres/newsfeed/NewsData/cleaned_news.csv")
+
 
 def runGit():
     # Initialize the object to run git commands
     command = AutomateCommit(commit_message="Retrieve new articles",
-                             repo_dir="/Users/aowang/715")
+                             repo_dir="/home/aow252/ceres-bucket-1/ceres/")
     command.git_commit()
     command.git_push()
+
 
 def retrieve():
     """Collects the JSON file from the NewsAPI, cleans it, and rewrites the HTML"""
@@ -50,11 +53,11 @@ def retrieve():
     the_news = response.json()
 
     # JSON file is created with all the URLs and information
-    with open('/Users/aowang/715/newsfeed/NewsData/wildfirenews.json', 'w') as json_file:
+    with open('/home/aow252/ceres-bucket-1/ceres/newsfeed/NewsData/wildfirenews.json', 'w') as json_file:
         json.dump(the_news, json_file)
 
     # Retrieves JSON can turns into Pandas DataFrame
-    with open('/Users/aowang/715/newsfeed/NewsData/wildfirenews.json', 'r') as json_file:
+    with open('/home/aow252/ceres-bucket-1/ceres/newsfeed/NewsData/wildfirenews.json', 'r') as json_file:
         df_news = pd.DataFrame(json.load(json_file)["articles"])
 
     print("Cleaning data...")
@@ -70,8 +73,8 @@ def retrieve():
 
     print("Done! At {}".format(dt.datetime.now()))
     print("Number of articles: {}".format(len(df_news)))
-    
-    runGit() # Commits and pushes new articles
+
+    runGit()  # Commits and pushes new articles
 
 
 print("""                                                                                              

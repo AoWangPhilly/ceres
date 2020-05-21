@@ -139,12 +139,12 @@ if __name__ == "__main__":
     # saves it as a CSV file
     frp_series = pd.DataFrame(collected.frp[collected.frp.notna()])
     frp_series.columns = ["FRP"]
-    frp_series.to_csv("/Users/aowang/715/website/frp.csv", index=False)
+    frp_series.to_csv(
+        "/home/aow252/ceres-bucket-1/ceres/website/frp.csv", index=False)
 
     # Gets the mapping of coordinates of wildfires per day and saves it
     # as a JSON file
     plot_data = get_week_time_coordinates(collected)
-    with open("/Users/aowang/715/website/week_data.json", "w") as data:
+    with open("/home/aow252/ceres-bucket-1/ceres/website/week_data.json", "w") as data:
         data.write(str(plot_data).replace("'", '"'))
-
 
