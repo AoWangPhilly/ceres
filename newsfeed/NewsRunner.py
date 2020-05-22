@@ -83,9 +83,10 @@ print("""
 |  |' '  |    |  `--,      |  '--' ||  '--'.'|  | |  ||  | .---.|  '--'.'|  .-.  ||  |'.'|  | 
 |  | `   |.--.|  |`.--.    |  | --' |  |\  \ '  '-'  ''  '--'  ||  |\  \ |  | |  ||  |   |  | 
 `--'  `--''--'`--' '--'    `--'     `--' '--' `-----'  `------' `--' '--'`--' `--'`--'   `--' 
-                                                                                              """)
-schedule.every(3).weeks.do(retrieve)  # scheduled for every 3 weeks
-while True:
-    schedule.run_pending()
-    time.sleep(1)
 
+                                                                                              """)
+#schedule.every(3).weeks.do(retrieve)  # scheduled for every 3 weeks
+#while True:
+#    schedule.run_pending()
+#    time.sleep(1)
+retrieve()
