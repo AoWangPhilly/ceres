@@ -49,8 +49,8 @@ def runGit():
     # Initialize the object to run git commands
     command = AutomateCommit(commit_message="Update wildfire data",
                              repo_dir="/home/aow252/ceres-bucket-1/ceres/")
-    command.git_commit()
-    command.git_push()
+    print(command.git_commit())
+    print(command.git_push())
     print("DONE!! At {}\n".format(datetime.datetime.now()))
 
 
@@ -68,9 +68,10 @@ def main():
     runGit()
 
 main()
+
 # Runs the script every 12 hours
-#schedule.every(12).hours.do(main)
-#while True:
-#    schedule.run_pending()
-#    time.sleep(1)
+schedule.every(12).hours.do(main)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
