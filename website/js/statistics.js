@@ -8,7 +8,8 @@ let config = {
  * @param {data} input the JSON data that holds the fires each day.
  */
 function makeLineGraph(data) {
-    lengths = []
+    let lengths = {}
+    let sortedLengths = {}
     let myPlot = document.getElementById("myLineGraph");
     let layout = {
         title: "Wildfire Count Over the Week"
@@ -16,12 +17,31 @@ function makeLineGraph(data) {
 
     // Creates list of the number of fires each day
     for (let time in data) {
-        lengths.push(data[time].length);
+        lengths[new Date(time)] = data[time].length;
+    }
+
+    // Sorts the days by the date objects, then reversing them to lowest to highest days
+    let sortedDays = Object.keys(lengths).sort((a,b)=>new Date(b)-new Date(a));
+    sortedDays.reverse();
+
+    // Assigning the sorted days and formatting the date object as YEAR-MONTH-DAY
+    for (let time in sortedDays){
+        time = new Date(sortedDays[time])
+        month = time.getMonth() + 1;
+        day = time.getDate() + 1;
+        if (day < 10) {
+            day = "0" + day
+        }
+        if (month < 10) {
+            month = "0" + month
+        }
+        date = time.getFullYear() + "-" + month + "-" + day 
+        sortedLengths[date] = lengths[time]
     }
 
     let trace1 = {
-        x: Object.keys(data),
-        y: lengths,
+        x: Object.keys(sortedLengths),
+        y: Object.values(sortedLengths),
         type: "scatter"
     };
     new_data = [trace1];
@@ -49,7 +69,16 @@ function makeLineGraph(data) {
 
     // Creates bar graph when node in line graph is clicked
     myPlot.on("plotly_click", function (point) {
-        let date = point.points[0].x; // the date
+        let date = new Date(point.points[0].x); // the date
+        month = date.getMonth() + 1;
+        day = date.getDate() + 1;
+        if (day < 10) {
+            day = "0" + day
+        }
+        if (month < 10) {
+            month = "0" + month
+        }
+        date = date.getFullYear() + "-" + month + "-" + day
         layout = {
             title: `Fire Count for Each State and Internal Territory on ${date}`
         };
@@ -148,11 +177,14 @@ function createBarGraph(coordinates, date) {
  * Purpose is to show how strong the fires are currently
  */
 d3.csv("frp.csv", function (data) {
-    console.log(data);
     let layout = {
         title: "Australia Fire Radiative Power(FRP) in Megawatts(MW)",
-        xaxis: {title: "FRP"}, 
-        yaxis: {title: "Count"}
+        xaxis: {
+            title: "FRP"
+        },
+        yaxis: {
+            title: "Count"
+        }
     }
     let arr = []
     for (let key in data) {
