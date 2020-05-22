@@ -10,6 +10,7 @@ description: The module holds the class CleanData to web scrape, clean, and pres
 from bs4 import BeautifulSoup
 import pandas as pd
 import requests
+from collections import OrderedDict
 
 
 class CleanData:
@@ -124,7 +125,7 @@ def get_week_time_coordinates(df):
             json[row.acq_date] = []
         else:
             json[row.acq_date].append([row.latitude, row.longitude])
-    json = dict(sorted(json.items()))
+    json = OrderedDict(sorted(json.items()))
     return json
 
 
