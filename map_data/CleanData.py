@@ -124,6 +124,7 @@ def get_week_time_coordinates(df):
             json[row.acq_date] = []
         else:
             json[row.acq_date].append([row.latitude, row.longitude])
+    json = dict(sorted(json.items()))
     return json
 
 
