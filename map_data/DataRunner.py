@@ -71,6 +71,11 @@ main()
 # Runs the script every 12 hours
 schedule.every(12).hours.do(main)
 while True:
+<<<<<<< HEAD
+   schedule.run_pending()
+   time.sleep(1)
+=======
 	schedule.run_pending()
 	time.sleep(1)
+>>>>>>> 382a167870a0303abb5d1a0e39a7917c6eab3073
 
