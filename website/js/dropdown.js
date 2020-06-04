@@ -1,3 +1,12 @@
+/**
+ * Latest Update: Added documentation
+ * Name: dropdown.js
+ * Purpose: Allows drop down menu to appear when pressing the hamburger icon for all webpages
+ * Version: 2.9
+ * Date: June 4, 2020
+ * Contributors: Ao Wang
+**/
+
 // Credit to https://bulma.io/documentation/components/navbar/
 document.addEventListener('DOMContentLoaded', () => {
 

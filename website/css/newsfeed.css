@@ -1,3 +1,12 @@
+/* 
+Latest Update: Added documentation 
+Name: newsfeed.css
+Purpose: Adds hover over-lay animation for the news article's title and image 
+Version: 2.9
+Date: June 04, 2020
+Contributors: Hung Do, Ao Wang
+ */
+
 /*Credit to https://codepen.io/ArnaudBalland/pen/vGZKLr*/
 .content {
     position: relative;

@@ -1,3 +1,12 @@
+/**
+ * Latest Update: Added documentation
+ * Name: heat_map.js
+ * Purpose: Creates Custom Heatmap object with Timeslider
+ * Version: 2.9
+ * Date: June 4, 2020
+ * Contributors: Ao Wang
+ **/
+
 var TDHeatmap = L.TimeDimension.Layer.extend({
 
     initialize: function (data, options) {

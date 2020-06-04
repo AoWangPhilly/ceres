@@ -6,37 +6,38 @@ Version: 2.6 (Update formatting) | quarter.week (git commit message)
 Date: May 16, 2020
 Contributors: Joey Huang, Ao Wang
  */
- 
-#navMenu{
-	font-size: 17px; 
+
+#navMenu {
+	font-size: 17px;
 	font-family: 'Manrope', sans-serif
 }
 
-.tabs{
-	font-size: 18px; 
+.tabs {
+	font-size: 18px;
 	font-family: 'Manrope', sans-serif
 }
 
-.title{
-	font-family: 'Manrope', sans-serif	
-
+.title {
+	font-family: 'Manrope', sans-serif
 }
 
-#webHeader{
-	font-size: 60px; 
+#webHeader {
+	font-size: 60px;
 	font-family: 'Raleway', sans-serif;
 }
-.content{
+
+.content {
 	font-family: 'Quicksand', sans-serif;
 }
 
 #subtitle {
-	font-size: 17px; 
-}
-.card-image {
-  padding: 25px 10px 10px 15px;
+	font-size: 17px;
 }
 
-#links{
-    text-decoration: none;
+.card-image {
+	padding: 25px 10px 10px 15px;
+}
+
+#links {
+	text-decoration: none;
 }

@@ -27,10 +27,11 @@ html[data-theme='dartheme'] {
   --backg: #232323;
   --colorx: #fff;
 }
- 
+
 h1 {
   color: var(--colorx);
 }
+
 h2 {
   color: var(--colorx);
 }
@@ -43,9 +44,9 @@ input[type=checkbox] {
   visibility: hidden;
   height: 0;
   width: 0;
-  
+
 }
- 
+
 label {
   margin: 0 auto;
   display: flex;
@@ -59,7 +60,7 @@ label {
   height: 30px;
   background: var(--btn);
 }
- 
+
 label:after {
   border-radius: 50%;
   position: absolute;
@@ -71,16 +72,16 @@ label:after {
   left: 4px;
   transition: ease-in-out 200ms;
 }
- 
-input:checked + label {
+
+input:checked+label {
   background: #ea4b3c;
 }
- 
-input:checked + label:after {
+
+input:checked+label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
- 
+
 html.transition,
 html.transition *,
 html.transition *:before,

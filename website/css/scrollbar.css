@@ -1,11 +1,20 @@
-  body::-webkit-scrollbar {
-      width: 0.25rem;
-  }
+/* 
+Latest Update: Added documentation 
+Name: scrollbar.css
+Purpose: Change the dimension of the scrollbar to make it more sleek with the webpage.
+Version: 2.9
+Date: June 04, 2020
+Contributors: Ao Wang
+ */
 
-  body::-webkit-scrollbar-track {
-      background: white;
-  }
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
 
-  body::-webkit-scrollbar-thumb {
-      background: rgba(0, 0, 0, 0.7);
-  }
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.7);
+}

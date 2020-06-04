@@ -1,3 +1,13 @@
+/**
+ * Latest Update: Added documentation
+ * Name: map_features.js
+ * Purpose: Add base layer and tile layers for the map and other map features, like the minimap, time slider, and mouse position
+ * Version: 2.9
+ * Date: June 4, 2020
+ * Contributors: Ao Wang
+**/
+
+
 // The different tile layer objects, learn more here: https://leafletjs.com/reference-1.6.0.html
 let openStreet = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 let stamenToner = new L.TileLayer("https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.png");

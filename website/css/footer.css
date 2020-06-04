@@ -7,9 +7,9 @@ Date: May 16, 2020
 Contributors: Joey Huang
  */
 
-footer.footer{
-	background-color:#FFD700;
-	padding: 15px;
+footer.footer {
+  background-color: #FFD700;
+  padding: 15px;
 }
 
 a:link {
@@ -28,12 +28,12 @@ a:active {
   color: #525252;
 }
 
-#icons{
-	width:60px;
-    height: auto;
+#icons {
+  width: 60px;
+  height: auto;
 }
 
-#footerInfo{
-  font-size: 11px; 
+#footerInfo {
+  font-size: 11px;
   color: #525252;
 }
