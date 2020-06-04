@@ -61,7 +61,7 @@
                         <a href="website/meetTheTeam.html" class="navbar-item">
                             Meet the Team
                         </a>
-                        <a href="/twitterFeed.html" class="navbar-item is-active">
+                        <a href="https://ow-wow-wang.github.io/ceres/twitterFeed.html" class="navbar-item is-active">
                             <img src="https://i.ya-webdesign.com/images/twitter-png-black-8.png" class="image">
                         </a>
                         <span class="navbar-item">

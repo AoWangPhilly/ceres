@@ -1,3 +1,13 @@
+/**
+ * Latest Update: Added documentation
+ * Name: statistics.js
+ * Purpose: Add line graph, bar chart, and pie chart to the statistics page
+ * Version: 2.9
+ * Date: June 4, 2020
+ * Contributors: Ao Wang
+**/
+
+
 // Makes the graphs responsive
 let config = {
     responsive: true
