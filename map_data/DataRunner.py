@@ -44,6 +44,7 @@ def collectAndClean():
         data.write(str(plot_data).replace("'", '"'))
     print("DONE!! At {}\n".format(datetime.datetime.now()))
 
+
 def runGit():
     print("Committing and Pushing...", end="")
     # Initialize the object to run git commands
@@ -67,15 +68,10 @@ def main():
     collectAndClean()
     runGit()
 
+
 main()
 # Runs the script every 12 hours
 schedule.every(12).hours.do(main)
 while True:
-<<<<<<< HEAD
-   schedule.run_pending()
-   time.sleep(1)
-=======
-	schedule.run_pending()
-	time.sleep(1)
->>>>>>> 382a167870a0303abb5d1a0e39a7917c6eab3073
-
+    schedule.run_pending()
+    time.sleep(1)
