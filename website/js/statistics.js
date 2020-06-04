@@ -28,7 +28,7 @@ function makeLineGraph(data) {
     for (let time in sortedDays){
         time = new Date(sortedDays[time])
         month = time.getMonth() + 1;
-        day = time.getDate() + 1;
+        day = time.getDate();
         if (day < 10) {
             day = "0" + day
         }
