@@ -109,15 +109,10 @@ d3.json("week_data.json", function (data) {
         times: times,
         currentTime: new Date(1)
     });
-
-    sortedDays = Object.keys(data);
-    sortedDays.sort();
-
-    for (let idx in sortedDays) {
-        week_data.push(data[sortedDays[idx]]);
+    for (let i in data) {
+        week_data.push(data[i]);
     }
-
-    let heatMapSlider = new L.Control.TimeDimensionCustom(sortedDays, {
+    let heatMapSlider = new L.Control.TimeDimensionCustom(Object.keys(data), {
             autoPlay: false,
             backwardButton: true,
             displayDate: true,
@@ -138,7 +133,7 @@ d3.json("week_data.json", function (data) {
             timeSteps: 1
         })
         .addTo(map);
-    
+
     let heatMap = new TDHeatmap(week_data, {
             heatmapOptions: {
                 radius: 15,

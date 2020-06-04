@@ -1,4 +1,12 @@
-
+/* 
+Latest Update: Added documentation 
+Name: footer.css
+Purpose: CSS for all the pages, formats the titles, text, navigation bar, cards
+Version: 2.6 (Update formatting) | quarter.week (git commit message)
+Date: May 16, 2020
+Contributors: Joey Huang, Ao Wang
+ */
+ 
 #navMenu{
 	font-size: 17px; 
 	font-family: 'Manrope', sans-serif
@@ -32,4 +40,3 @@
 #links{
     text-decoration: none;
 }
-

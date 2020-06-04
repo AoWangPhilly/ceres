@@ -21,21 +21,21 @@ function makeLineGraph(data) {
     }
 
     // Sorts the days by the date objects, then reversing them to lowest to highest days
-    let sortedDays = Object.keys(lengths).sort((a, b) => new Date(b) - new Date(a));
+    let sortedDays = Object.keys(lengths).sort((a,b)=>new Date(b)-new Date(a));
     sortedDays.reverse();
 
     // Assigning the sorted days and formatting the date object as YEAR-MONTH-DAY
-    for (let time in sortedDays) {
+    for (let time in sortedDays){
         time = new Date(sortedDays[time])
         month = time.getMonth() + 1;
-        day = time.getDate();
+        day = time.getDate() + 1;
         if (day < 10) {
             day = "0" + day
         }
         if (month < 10) {
             month = "0" + month
         }
-        date = time.getFullYear() + "-" + month + "-" + day
+        date = time.getFullYear() + "-" + month + "-" + day 
         sortedLengths[date] = lengths[time]
     }
 
@@ -123,38 +123,22 @@ function createBarGraph(coordinates, date) {
             } else if ((long >= 129 && long <= 141) && lat <= -26) {
                 regions["South Australia"]++;
                 dayCoordinates = dayCoordinates.filter(c => c !== coord);
-                // Queensland
-            } else if (long >= 138 && lat >= -29) {
-                regions["Queensland"]++;
-                dayCoordinates = dayCoordinates.filter(c => c !== coord);
-                // New South Wales
-            } else if (long >= 141 && (lat <= -29 && lat >= -34)) {
-                regions["New South Wales"]++;
-                dayCoordinates = dayCoordinates.filter(c => c !== coord);
-                // Victoria
-            } else if (long >= 141 && (lat <= -34 && lat >=-39 )) {
-                regions["Victoria"]++;
-                dayCoordinates = dayCoordinates.filter(c => c !== coord);
-                 // Tasmania
-            } else if ((long >= 143 && long <= 148) && lat <= -39) {
-                regions["Tasmania"]++;
-                dayCoordinates = dayCoordinates.filter(c => c !== coord);
             }
+
         }
 
-        // NOT SURE IF GEOJSON WORKS WELL
         // Counts fires for New South Wales, Victoria, Queensland, Tasmania, ACT
-        // for (let region_idx = 0; region_idx < numberOfAreas; region_idx++) {
-        //     for (let coord of dayCoordinates) {
-        //         stateName = areaObject[region_idx].properties.STATE_NAME;
-        //         if (d3.geoContains(areaObject[region_idx], coord)) {
-        //             regions[stateName]++;
-        //             dayCoordinates = dayCoordinates.filter(c => c !== coord);
-        //             // let index = dayCoordinates.indexOf(coord);
-        //             // dayCoordinates.splice(index, 1)
-        //         }
-        //     }
-        // }
+        for (let region_idx = 0; region_idx < numberOfAreas; region_idx++) {
+            for (let coord of dayCoordinates) {
+                stateName = areaObject[region_idx].properties.STATE_NAME;
+                if (d3.geoContains(areaObject[region_idx], coord)) {
+                    regions[stateName]++;
+                    dayCoordinates = dayCoordinates.filter(c => c !== coord);
+                    // let index = dayCoordinates.indexOf(coord);
+                    // dayCoordinates.splice(index, 1)
+                }
+            }
+        }
 
         let bar = [{
             x: Object.keys(regions),

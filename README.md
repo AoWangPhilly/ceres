@@ -12,23 +12,50 @@ Ceres is a web application dedicated to promoting and bringing awareness to the 
 
 It started out as a freshman design project by Hung Do, Joey Huang, EJ Roberts, and Ao Wang and has been in development since early January 2020. 
 
-   
+## Table of Content
++ [Technologies Used](#tech-used)
++ [Installation](#install)
++ [How Does it Work?](#how)
++ [User Manual](#user-man)
++ [System Manual](#sys-man)
++ [Contributing ](#contrib)
++ [License](#license)
 
-# Features
+
+## Features
 
 To get a complete list of supported features, please visit our [website](https://tinyurl.com/rucere-ious).
 
-# Technologies Used
+<div id="tech-used"></div>
 
-  + Google Cloud Platform: 
+## Technologies Used
+
+### Front-end 
+
+* HTML
+* CSS
+* JavaScript
+* [Bulma](https://bulma.io/) - CSS Framework
+
+### Back-end
+
+* Python
+* Pandas
+
+### Automation
+
+* Google Cloud Platform: 
     - [Compute Engine](https://cloud.google.com/compute)
     - [Storage Buckets](https://cloud.google.com/compute/docs/disks/gcs-buckets)
-  + [Bulma](https://bulma.io/) - CSS Framework
-  + [News API](https://newsapi.org/) - A JSON API for live news and blog articles
-  + [Twitter API](https://python-twitter.readthedocs.io/en/latest/)
-  + [NASA's Satellite Data](https://firms.modaps.eosdis.nasa.gov/active_fire/#firms-txt)
 
-# Installation
+### Data Collection
+* [News API](https://newsapi.org/) - A JSON API for live news and blog articles
+* [Twitter API](https://python-twitter.readthedocs.io/en/latest/) 
+* [NASA's Satellite Data](https://firms.modaps.eosdis.nasa.gov/active_fire/#firms-txt)
+
+<div id="install"></div>
+
+## Installation
 
 Cloning the repo:
 
@@ -42,32 +69,49 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to download Python
 pip install -r requirements.txt
 ```
 
-# User Manual
+<div id="how"></div>
 
-* [Map Demo](https://ow-wow-wang.github.io/ceres/website/mapinfo.html)
+## How does it work?
+Ceres web scraps bushfire data from NASA's sensors, cleans the false positives' data and plots them onto the map. There's also a statistics portion where Ceres counts the fires for each of Australia's regions and measures the distribution of Fire Radiative Power (FRP). This process occurs twice a day.
 
-# Systems Manual
+Additionally, Ceres has a charity page to many, reputable charities trying to fight the fire and support Australia's people and wildlife. 
 
--
+But one of Ceres' goals is also to maintain the awareness of the bushfires, which is why we added a News Feed and Twitter Feed, gathering links using Python's News and Twitter API. The new news articles are shown every month and continually updating Twitter Feed. 
 
-# Contributing
+<div id="user-man"></div>
+
+## User Manual
+
+* [User Manual](https://gitlab.cci.drexel.edu/fds20/715/-/wikis/User-Manual)
+
+<div id="sys-man"></div>
+
+## Systems Manual
+
+* [Systems Manual](https://gitlab.cci.drexel.edu/fds20/715/-/wikis/System-Manual)
+
+<div id="contrib"></div>
+
+## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please take a look at our [contributing](CONTRIBUTING.md) guidelines if you're interested in helping!
 
-# Contributers
+## Contributers
 
-  + Hung Do
-  + Joey Huang
-  + EJ Roberts
-  + Ao Wang
+  + Hung Do ([hd386@drexel.edu](hd386@drexel.edu))
+  + Joey Huang ([jh3759@drexel.edu](jh3759@drexel.edu))
+  + EJ Roberts ([ejr89@drexel.edu](ejr89@drexel.edu))
+  + Ao Wang ([aw3338@drexel.edu](aw3338@drexel.edu))
 
-# License
+<div id="license"></div>
+
+## License
 
   + [MIT](https://choosealicense.com/licenses/mit/)
 
-# Acknowledgements
+## Acknowledgements
 
   + Our TA's for their endless support
   + Dr. Pirmann and the other Freshmen Design Sequence professors for their guidance

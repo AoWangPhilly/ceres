@@ -10,7 +10,6 @@ description: The module holds the class CleanData to web scrape, clean, and pres
 from bs4 import BeautifulSoup
 import pandas as pd
 import requests
-from collections import OrderedDict
 
 
 class CleanData:
@@ -148,4 +147,3 @@ if __name__ == "__main__":
     plot_data = get_week_time_coordinates(collected)
     with open("/home/aow252/ceres-bucket-1/ceres/website/week_data.json", "w") as data:
         data.write(str(plot_data).replace("'", '"'))
-

@@ -1,4 +1,13 @@
- /** code by webdevtrick ( https://webdevtrick.com ) **/
+/** Credit to webdevtrick ( https://webdevtrick.com ) **/
+/**
+ * Latest Update: Added documentation
+ * Name: function.js
+ * Purpose: Allow dark mode to be toggled.
+ * Version: 1.1 (Resetting name attributes) | quarter.week (git commit message)
+ * Date: June 3, 2020
+ * Contributors: Hung Do
+**/
+
  var checkbox = document.querySelector('input[name=mode]');
  
         checkbox.addEventListener('change', function() {
