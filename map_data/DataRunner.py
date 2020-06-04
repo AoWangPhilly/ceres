@@ -69,8 +69,8 @@ def main():
 
 main()
 # Runs the script every 12 hours
-# schedule.every(12).hours.do(main)
-# while True:
-#    schedule.run_pending()
-#    time.sleep(1)
+schedule.every(12).hours.do(main)
+while True:
+	schedule.run_pending()
+	time.sleep(1)
 
