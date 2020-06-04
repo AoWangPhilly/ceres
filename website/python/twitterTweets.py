@@ -11,13 +11,11 @@ api = api.Api(consumer_key='PK1sz4xtGw7NI1czSurpxqjwg',
               consumer_secret='7yB9oscUnnVuvWJXdNVAfb9Fkt1S4ndOb01JVcyUKFZlq6Cvbp',
               access_token_key='1067122097674170368-B2NXOdXqyFIY1qEskfsBHkOMvSjYJr',
               access_token_secret='WQdb3bL4FTg1K93AGZmb4aIqm7dWo5pBQMoy0QDI4kwmb')
-
 # Edit the query below for your refined search
 # Check twitter developer site for query terms
 # Change count=X term for number of tweets and %23X for the search term (%23 = #)
 results = api.GetSearch(
     raw_query='q=%23bushfires%20&result_type=recent&since=2014-07-19&count=25')
-
 # Original Results
 print('FIRST RESULTS: {}'.format(results))
 # This checks for tweets with duplicate text and effectively removes retweets
@@ -46,6 +44,7 @@ with open("website/python/header.txt") as header:
 
 # Writes the tweeted content in cards, each tweet has its own card
 # Generates one card per tweet
+f = open("twitterFeed.html", "a")
 for result in results:
     print(api.GetStatusOembed(result.id))
     preEmbed = '{}'.format(

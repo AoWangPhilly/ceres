@@ -9,15 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Spartan&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="css/newsfeed.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="website/css/main.css">
+    <link rel="stylesheet" href="website/css/scrollbar.css">
     <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="website/css/footer.css">
     <script src="jquery-3.4.1.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="js/newsfeed.js"></script>
-    <script src="js/dropdown.js"></script>
+    <script src="website/js/newsfeed.js"></script>
+    <script src="website/js/dropdown.js"></script>
     <title>Twitter Feed</title>
 
 </head>

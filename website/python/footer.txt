@@ -5,19 +5,19 @@
             <div class="container is-widescreen">
                 <div class="columns">
                     <div class="column">
-                        <p id="icons"><a href="website/home.html"><img src="icons/home.png"></a></p>
+                        <p id="icons"><a href="website/home.html"><img src="website/icons/home.png"></a></p>
                     </div>
                     <div class="column">
-                        <p id="icons"><a href="map.html"><img src="icons/map.png"></a></p>
+                        <p id="icons"><a href="website/map.html"><img src="website/icons/map.png"></a></p>
                     </div>
                     <div class="column">
-                        <p id="icons"><a href="website/newsFeed.html"><img src="icons/news.png"></a></p>
+                        <p id="icons"><a href="website/newsFeed.html"><img src="website/icons/news.png"></a></p>
                     </div>
                     <div class="column">
-                        <p id="icons"><a href="https://ow-wow-wang.github.io/ceres/twitterFeed.html"><img src="icons/twitter.png"></a></p>
+                        <p id="icons"><a href="https://ow-wow-wang.github.io/ceres/twitterFeed.html"><img src="website/icons/twitter.png"></a></p>
                     </div>
                     <div class="column">
-                        <p id="icons"><a href="website/meetTheTeam.html"><img src="icons/about.png"></a></p>
+                        <p id="icons"><a href="website/meetTheTeam.html"><img src="website/icons/about.png"></a></p>
                     </div>
                 </div>
             </div>
