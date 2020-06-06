@@ -1,3 +1,12 @@
+"""
+Latest update: Refactor the code and encapsulate header and footer to separate text files
+Version: 2.9
+lab section: 071
+date: 06/04/2020
+names: EJ Roberts, Ao Wang
+description: Retrieves tweets and displays them on webpage
+"""
+
 from twitter import *
 from requests_oauthlib import OAuth1Session
 
