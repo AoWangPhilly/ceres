@@ -32,15 +32,14 @@ def collectAndClean():
     print("Gathering FRP data...", end="")
     frp_series = pd.DataFrame(collected.frp[collected.frp.notna()])
     frp_series.columns = ["FRP"]
-    frp_series.to_csv(
-        "/home/aow252/ceres-bucket-1/ceres/website/frp.csv", index=False)
+    frp_series.to_csv("website/frp.csv", index=False)
     print("DONE!! At {}\n".format(datetime.datetime.now()))
 
     print("Mapping wildfire data...", end="")
     # Gets the mapping of coordinates of wildfires per day and saves it
     # as a JSON file
     plot_data = get_week_time_coordinates(collected)
-    with open("/home/aow252/ceres-bucket-1/ceres/website/week_data.json", "w") as data:
+    with open("website/week_data.json", "w") as data:
         data.write(str(plot_data).replace("'", '"'))
     print("DONE!! At {}\n".format(datetime.datetime.now()))
 
@@ -49,7 +48,7 @@ def runGit():
     print("Committing and Pushing...", end="")
     # Initialize the object to run git commands
     command = AutomateCommit(commit_message="Update wildfire data",
-                             repo_dir="/home/aow252/ceres-bucket-1/ceres/")
+                             repo_dir="website")
     command.git_commit()
     command.git_push()
     print("DONE!! At {}\n".format(datetime.datetime.now()))
